@@ -24,7 +24,7 @@ class ChatService:
                 }
             }
             
-        # 直接返回数据，不要嵌套太多层
+       
         return {
             'code': 200,
             'message': 'success',
@@ -46,7 +46,7 @@ class ChatService:
                 'Content-Type': 'application/json'
             }
             
-            # 使用已验证可工作的简单请求格式
+            
             retrieve_data = {
                 "query": query,
                 "top_k": 3
@@ -89,16 +89,17 @@ class ChatService:
             logger.info(f"知识库检索结果：{knowledge_content}")
             
             # 2. 构建系统提示语
-            system_prompt = """你是一个工业企业设计标准知识库的助手。请按以下步骤处理用户问题：
-            1. 分析用户问题的关键点
-            2. 根据知识库检索内容提供专业答案
-            3. 引用相关标准和规范
-            4. 保持回答简洁清晰
-            
-            知识库检索结果如下：
-            {knowledge_base_content}
-            
-            请基于以上检索内容，结合你的专业知识，给出完整的回答。如果检索内容不足以回答问题，请明确说明。
+            system_prompt = """
+你是一个工业企业设计标准知识库的助手。请按以下步骤处理用户问题：
+1. 分析用户问题的关键点
+2. 根据知识库检索内容提供专业答案
+3. 引用相关标准和规范
+4. 保持回答简洁清晰
+
+知识库检索结果如下：
+{knowledge_base_content}
+
+请基于以上检索内容，结合你的专业知识，给出完整的回答。如果检索内容不足以回答问题，请明确说明。
             """
             
             # 3. 构建对话历史
@@ -122,7 +123,8 @@ class ChatService:
             logger.info(f"GLM-4初步回答：{initial_answer}")
             
             # 5. 使用GLM-4进行答案优化
-            optimization_prompt = f"""请作为专业的工业设计顾问，审查并优化以下回答：
+            optimization_prompt = f"""
+请作为专业的工业设计顾问，审查并优化以下回答：
 
 原始问题：{query}
 
