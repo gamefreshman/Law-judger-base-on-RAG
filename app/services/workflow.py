@@ -88,7 +88,7 @@ class WorkflowService:
             # 打印响应详情
             # logger.info(f"响应状态码: {response.status_code}")
             # logger.info(f"响应头: {dict(response.headers)}")
-            # logger.info(f"响应内容: {response.text[:500]}...")  # 只打印前500个字符
+            logger.info(f"响应内容: {response.text[:500]}...")  # 只打印前500个字符
             
             response.raise_for_status()
             
@@ -108,14 +108,14 @@ class WorkflowService:
                     assessment_data = json.loads(assessment_result)
                     # 格式化输出
                     formatted_result = f"""
-评估结果：{assessment_data.get('评估结果', '未知')}
-法规内容：{assessment_data.get('法规内容', '未知')}
-检查情况：{assessment_data.get('检查情况', '未知')}
-评估依据：{assessment_data.get('评估依据', '未知')}
-"""
+                    评估结果：{assessment_data.get('评估结果', '未知')}
+                    法规内容：{assessment_data.get('法规内容', '未知')}
+                    检查情况：{assessment_data.get('检查情况', '未知')}
+                    评估依据：{assessment_data.get('评估依据', '未知')}
+                    """
                     return formatted_result.strip()
                 except json.JSONDecodeError as e:
-                    logger.error(f"评估结果解析失败: {str(e)}")
+                    # logger.error(f"评估结果解析失败: {str(e)}")
                     return assessment_result  # 如果解析失败，返回原始字符串
             
             logger.error("响应中没有找到评估结果字段")

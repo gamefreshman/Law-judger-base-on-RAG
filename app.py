@@ -1,4 +1,5 @@
 from datetime import datetime
+import subprocess
 from fastapi import FastAPI, File, UploadFile, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
@@ -11,6 +12,7 @@ import traceback
 from typing import Optional, Dict, Any
 from pydantic import BaseModel
 import json
+from fastapi.responses import HTMLResponse
 
 class ChatResponse(BaseModel):
     code: int
@@ -49,67 +51,30 @@ root_dir = os.path.dirname(os.path.abspath(__file__))
 chat_service = ChatService()
 document_service = DocumentService()
 
-# @app.get("/")
-# @app.get("/index.html")
-# async def main(request: Request):
-#     try:
-#         logger.info("="*50)
-#         logger.info("收到首页请求")
-#         logger.info(f"请求路径: {request.url.path}")
-#         logger.info(f"请求方法: {request.method}")
-#         logger.info(f"请求头: {request.headers}")
-        
-#         template_path = os.path.join(root_dir, "templates")
-#         template_file = os.path.join(template_path, "index.html")
-        
-#         logger.info(f"模板路径: {template_path}")
-#         logger.info(f"模板文件: {template_file}")
-#         logger.info(f"模板文件存在: {os.path.exists(template_file)}")
-        
-#         if not os.path.exists(template_file):
-#             raise FileNotFoundError(f"模板文件不存在: {template_file}")
-        
-#     except Exception as e:
-#         logger.error("="*50)
-#         logger.error(f"渲染主页时发生错误: {str(e)}")
-#         logger.error(f"错误类型: {type(e).__name__}")
-#         logger.error(f"错误堆栈: \n{traceback.format_exc()}")
-        
-#         raise HTTPException(
-#             status_code=500,
-#             detail={
-#                 "error": "服务器内部错误",
-#                 "detail": str(e),
-#                 "type": type(e).__name__
-#             }
-#         )
 
-# @app.post("/api/chat")
-# async def chat(query: str):
-#     try:
-#         # data = await query.json()
-#         # query_content = data.get('query', '')
-#         query_content = query
+@app.get("/run-script", response_class=HTMLResponse)
+async def run_script():
+    script_path = r"C:\Users\23757\Desktop\大创相关文档\code_rebuild\PROJECT\Law-judger-base-on-RAG\LightRAG\lightrag_zhipu_demo.py"
+    python_executable = r"C:\Positive\env\VM\anaconda\envs\MinerU\python.exe"
+    
+    # 打印调试信息
+    print(f"Python 解释器路径: {python_executable}")
+    print(f"脚本路径: {script_path}")
+    
+    try:
+        # 执行脚本
+        subprocess.run([python_executable, script_path], check=True)
         
-#         if not query:
-#             raise HTTPException(status_code=400, detail="查询内容不能为空")
-            
-#         response = await chat_service.retrieve_knowledge(query_content)
-#         # formatted_response = chat_service.format_response(response)
+        # 读取生成的 HTML 文件
+        with open("knowledge_graph.html", "r", encoding="utf-8") as f:
+            html_content = f.read()
         
-#         return {
-#             "status": "success",
-#             "data": response
-#         }
-        
-#     except Exception as e:
-#         raise HTTPException(
-#             status_code=500,
-#             detail={
-#                 "status": "error",
-#                 "message": str(e)
-#             }
-#         )
+        return HTMLResponse(content=html_content)
+    
+    except FileNotFoundError as e:
+        return HTMLResponse(content=f"文件未找到: {str(e)}", status_code=500)
+    except Exception as e:
+        return HTMLResponse(content=f"执行脚本时发生错误: {str(e)}", status_code=500)
 
 @app.get("/api/health")
 async def health_check():
@@ -206,54 +171,6 @@ async def error_handling_middleware(request, call_next):
                 "message": str(e)
             }
         )
-# @app.post("/api/chat")
-# async def chat(request: ChatRequest):
-#     try:
-#         if not request.query:
-#             raise HTTPException(status_code=400, detail="查询内容不能为空")
-           
-#         # 调用知识库服务获取回答
-#         response = await chat_service.retrieve_knowledge(request.query)
-        
-#         # 保持原有的返回格式结构
-#         return {
-#             "status": "success",
-#             "data": {
-#                 "code": 200,
-#                 "message": "success",
-#                 "data": {
-#                     "answer": response,
-#                     "metadata": {
-#                         "model": "glm-4-flash",
-#                         "usage": {
-#                             "prompt_tokens": 0,
-#                             "completion_tokens": 0,
-#                             "total_tokens": 0
-#                         }
-#                     },
-#                     "chat_history": [
-#                         {
-#                             "role": "user",
-#                             "content": request.query
-#                         },
-#                         {
-#                             "role": "assistant",
-#                             "content": response
-#                         }
-#                     ],
-#                     "knowledge_base_content": "" # 如果需要可以从response中提取
-#                 }
-#             }
-#         }
-       
-#     except Exception as e:
-#         raise HTTPException(
-#             status_code=500,
-#             detail={
-#                 "status": "error",
-#                 "message": str(e)
-#             }
-#         )
 @app.post("/api/upload")
 async def upload(file: UploadFile = File(...)):
     try:
@@ -265,7 +182,6 @@ async def upload(file: UploadFile = File(...)):
                     "message": "没有找到上传的文件"
                 }
             )
-        
         filename = file.filename
         
         # 确保文件名是UTF-8编码
@@ -301,7 +217,7 @@ async def upload(file: UploadFile = File(...)):
         result = await document_service.upload_document(file_info) 
 
         # 读取Judge_output文件夹中的所有文件
-        judge_output_path = os.path.join(root_dir, 'Judge_output')
+        judge_output_path = os.path.join(root_dir, 'good_output')
         judged_content: Dict[str, str] = {}
         
         if os.path.exists(judge_output_path):
@@ -349,36 +265,6 @@ async def upload(file: UploadFile = File(...)):
                 "message": f"文件处理错误: {str(e)}"
             }
         )
-        
-    #     if result:
-    #         return {
-    #             "status": "success",
-    #             "message": "文件上传并完成法规评估",
-    #             "data": {
-    #                 "upload_result": result['upload_response'],
-    #                 "assessments": result['assessments']
-    #             }
-    #         }
-    #     else:
-    #         raise HTTPException(
-    #             status_code=500,
-    #             detail={
-    #                 "status": "error",
-    #                 "message": "文件处理失败"
-    #             }
-    #         )
-            
-    # except Exception as e:
-    #     logger.error(f"处理上传请求时发生错误: {str(e)}")
-    #     logger.error(f"错误类型: {type(e).__name__}")
-    #     logger.error(f"错误堆栈: \n{traceback.format_exc()}")
-    #     raise HTTPException(
-    #         status_code=500,
-    #         detail={
-    #             "status": "error",
-    #             "message": f"文件处理错误: {str(e)}"
-    #         }
-    #     )
 
 @app.get("/api/documents")
 async def get_documents():
@@ -431,18 +317,6 @@ if __name__ == "__main__":
         logger.info("="*50)
         logger.info("服务器启动检查")
         logger.info(f"项目根目录: {root_dir}")
-        logger.info(f"模板目录: {template_dir}")
-        logger.info(f"index.html路径: {index_file}")
-        logger.info(f"模板目录存在: {os.path.exists(template_dir)}")
-        logger.info(f"index.html存在: {os.path.exists(index_file)}")
-        
-        if not os.path.exists(template_dir):
-            logger.warning(f"创建模板目录: {template_dir}")
-            os.makedirs(template_dir)
-            
-        if not os.path.exists(index_file):
-            logger.error(f"index.html 文件不存在！")
-        
         # 启动服务器
         port = 8888
         logger.info(f"服务器启动成功: http://localhost:{port}")

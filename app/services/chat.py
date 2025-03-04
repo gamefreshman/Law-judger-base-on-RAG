@@ -90,20 +90,18 @@ class ChatService:
             
             # 2. 构建系统提示语
             system_prompt = """
-你是一个工业企业设计标准知识库的助手。请按以下步骤处理用户问题：
-1. 分析用户问题的关键点
-2. 根据知识库检索内容提供专业答案
-3. 引用相关标准和规范
-4. 保持回答简洁清晰
+你是一个基于工业文档知识库的问答助手。你需要根据知识库检索内容，首先思考分析当前我的问题（{query_content}）是否有歧义或者答案需求不清晰，缺乏限制条件。如果我的当前提问有明确歧义或者从知识库检索内容中查找不到准确答案，你需要生成一个阐明性问题去向我提问，得到我明确反馈后再进行回答交互。如果我当前提问并没有显著歧义，在检索内容中能找到对应答案，请你直接回答即可。
 
-知识库检索结果如下：
+根据问题，知识库检索结果如下：
 {knowledge_base_content}
 
-请基于以上检索内容，结合你的专业知识，给出完整的回答。如果检索内容不足以回答问题，请明确说明。
+请基于以上检索内容，先输出你的歧义判断过程。如果你判断有歧义，请提出简单的阐明性问题去消除歧义。如果你判断没有歧义，请给出完整的回答。
+
+输出示范如下：“当前问题存在歧义。因为“场景布局“这个术语比较广泛，它可以指代很多不同的布局类型，比如厂区布局、室内布局、舞台布局等，而“要求特定长度”这一表述没有明确指出是针对哪种场景布局的要求。为了更准确地回答您的问题，我需要您回答我：您提到的"场景布局“是指哪种类型的布局，比如厂区、室内、舞台等?您所说的“特定长度"是指布局的某个具体部分的长度要求吗?“
             """
             
             # 3. 构建对话历史
-            messages = [{"role": "system", "content": system_prompt.format(knowledge_base_content=knowledge_content)}]
+            messages = [{"role": "system", "content": system_prompt.format(query_content=query, knowledge_base_content=knowledge_content)}]
             messages.extend(self.chat_history)
             messages.append({"role": "user", "content": query})
             
@@ -123,36 +121,37 @@ class ChatService:
             logger.info(f"GLM-4初步回答：{initial_answer}")
             
             # 5. 使用GLM-4进行答案优化
-            optimization_prompt = f"""
-请作为专业的工业设计顾问，审查并优化以下回答：
+#             optimization_prompt = f"""
+# 请作为专业的工业设计顾问，审查并优化以下回答：
 
-原始问题：{query}
+# 原始问题：{query}
 
-知识库内容：
-{knowledge_content}
+# 知识库内容：
+# {knowledge_content}
 
-初步回答：
-{initial_answer}
+# 初步回答：
+# {initial_answer}
 
-请按以下方面优化回答：
-1. 确保回答准确性和专业性
-2. 补充必要的技术细节
-3. 添加相关的标准规范引用
-4. 使表述更加清晰和结构化
-5. 如果知识库内容不足，建议其他参考来源
+# 请按以下方面优化回答：
+# 1. 确保回答准确性和专业性
+# 2. 补充必要的技术细节
+# 3. 添加相关的标准规范引用
+# 4. 使表述更加清晰和结构化
+# 5. 如果知识库内容不足，建议其他参考来源
 
-优化后的回答："""
+# 优化后的回答："""
 
-            logger.info("开始优化回答")
-            optimization_response = self.client.chat.completions.create(
-                model=self.model,
-                messages=[{"role": "user", "content": optimization_prompt}],
-                temperature=0.5,
-                top_p=0.9,
-                max_tokens=2000
-            )
+            # logger.info("开始优化回答")
+            # optimization_response = self.client.chat.completions.create(
+            #     model=self.model,
+            #     messages=[{"role": "user", "content": optimization_prompt}],
+            #     temperature=0.5,
+            #     top_p=0.9,
+            #     max_tokens=2000
+            # )
             
-            optimized_answer = optimization_response.choices[0].message.content
+            # optimized_answer = optimization_response.choices[0].message.content
+            optimized_answer = initial_answer
             logger.info(f"优化后的回答：{optimized_answer}")
             
             # 6. 更新对话历史
@@ -168,11 +167,11 @@ class ChatService:
                 'answer': optimized_answer,
                 'metadata': {
                     'model': self.model,
-                    'usage': {
-                        'prompt_tokens': response.usage.prompt_tokens + optimization_response.usage.prompt_tokens,
-                        'completion_tokens': response.usage.completion_tokens + optimization_response.usage.completion_tokens,
-                        'total_tokens': response.usage.total_tokens + optimization_response.usage.total_tokens
-                    }
+                    # 'usage': {
+                    #     # 'prompt_tokens': response.usage.prompt_tokens + optimization_response.usage.prompt_tokens,
+                    #     # 'completion_tokens': response.usage.completion_tokens + optimization_response.usage.completion_tokens,
+                    #     # 'total_tokens': response.usage.total_tokens + optimization_response.usage.total_tokens
+                    # }
                 },
                 'chat_history': self.chat_history,
                 'knowledge_base_content': knowledge_content

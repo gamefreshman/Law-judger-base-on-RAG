@@ -39,7 +39,7 @@ rag = LightRAG(
     ),
 )
 
-with open("C:\\Users\\23757\\Desktop\\大创相关文档\\code_rebuild\\PROJECT\\Law-judger-base-on-RAG\\knowledge_base\\dify知识库.md", "r", encoding="utf-8") as f:rag.insert(f.read())
+with open("C:\\Users\\23757\\Desktop\\大创相关文档\\code_rebuild\\PROJECT\\Law-judger-base-on-RAG\\knowledge_base\\test.md", "r", encoding="utf-8") as f:rag.insert(f.read())
 
 G = nx.read_graphml("C:\\Users\\23757\\Desktop\\大创相关文档\\code_rebuild\\PROJECT\\Law-judger-base-on-RAG\\knowledge_base\\graph_chunk_entity_relation.graphml")
 
@@ -78,27 +78,27 @@ net.show("knowledge_graph.html")
 # )
 
 # Perform naive search
-print(
-    rag.query("文本内容的主题是什么？", param=QueryParam(mode="naive"))
-)
+# print(
+#     rag.query("文本内容的主题是什么？", param=QueryParam(mode="naive"))
+# )
 
-# Perform local search
-print(
-    rag.query("文本内容的主题是什么？", param=QueryParam(mode="local"))
-)
+# # Perform local search
+# print(
+#     rag.query("文本内容的主题是什么？", param=QueryParam(mode="local"))
+# )
 
-# Perform global search
-print(
-    rag.query("文本内容的主题是什么？", param=QueryParam(mode="global"))
-)
+# # Perform global search
+# print(
+#     rag.query("文本内容的主题是什么？", param=QueryParam(mode="global"))
+# )
 
-# Perform hybrid search
-print(
-    rag.query("文本内容的主题是什么？", param=QueryParam(mode="hybrid"))
-)
+# # Perform hybrid search
+# print(
+#     rag.query("文本内容的主题是什么？", param=QueryParam(mode="hybrid"))
+# )
 
-# stream response 这个模块有点问题
-resp = rag.query(
-    "文本内容的主题是什么？",
-    param=QueryParam(mode="hybrid", stream=True),
-)
+# # stream response 这个模块有点问题
+# resp = rag.query(
+#     "文本内容的主题是什么？",
+#     param=QueryParam(mode="hybrid", stream=True),
+# )
