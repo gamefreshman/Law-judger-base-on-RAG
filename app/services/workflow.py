@@ -88,7 +88,7 @@ class WorkflowService:
             # 打印响应详情
             # logger.info(f"响应状态码: {response.status_code}")
             # logger.info(f"响应头: {dict(response.headers)}")
-            logger.info(f"响应内容: {response.text[:500]}...")  # 只打印前500个字符
+            logger.info(f"报错响应内容: {response.text[:500]}...")  # 只打印前500个字符
             
             response.raise_for_status()
             

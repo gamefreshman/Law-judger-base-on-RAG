@@ -8,7 +8,9 @@ import networkx as nx
 from pyvis.network import Network
 import random
 
-WORKING_DIR = "C:\\Users\\23757\\Desktop\\大创相关文档\\code_rebuild\\PROJECT\\Law-judger-base-on-RAG\\knowledge_base"
+import re
+
+WORKING_DIR = r"C:\Users\23757\Desktop\大创相关文档\code_rebuild\PROJECT\Law-judger-base-on-RAG\LightRAG\LawGraph"
 
 logging.basicConfig(format="%(levelname)s:%(message)s", level=logging.INFO)
 
@@ -39,65 +41,72 @@ rag = LightRAG(
     ),
 )
 
-with open("C:\\Users\\23757\\Desktop\\大创相关文档\\code_rebuild\\PROJECT\\Law-judger-base-on-RAG\\knowledge_base\\test.md", "r", encoding="utf-8") as f:rag.insert(f.read())
+# for file in os.listdir(WORKING_DIR):
+#     with open(os.path.join(WORKING_DIR, file), "r", encoding="utf-8") as f:
+#         if file.endswith(".md"):
+#             with open(os.path.join(WORKING_DIR, file), "r", encoding="utf-8") as f:
+#                 rag.insert(f.read())
 
-G = nx.read_graphml("C:\\Users\\23757\\Desktop\\大创相关文档\\code_rebuild\\PROJECT\\Law-judger-base-on-RAG\\knowledge_base\\graph_chunk_entity_relation.graphml")
+# G = nx.read_graphml(r"C:\Users\23757\Desktop\大创相关文档\code_rebuild\PROJECT\Law-judger-base-on-RAG\LightRAG\LawGraph\graph_chunk_entity_relation.graphml")
 
-net = Network(height="100vh", notebook=True)
+# net = Network(height="100vh", notebook=True)
 
-net.from_nx(G)
+# net.from_nx(G)
 
-for node in net.nodes:
-    node["color"] = "#{:06x}".format(random.randint(0, 0xFFFFFF))
-    if "description" in node:
-        node["title"] = node["description"]
+# for node in net.nodes:
+#     node["color"] = "#{:06x}".format(random.randint(0, 0xFFFFFF))
+#     if "description" in node:
+#         node["title"] = node["description"]
+        
+# for edge in net.edges:
+#     if "description" in edge:
+#         edge["title"] = edge["description"]
 
-for edge in net.edges:
-    if "description" in edge:
-        edge["title"] = edge["description"]
-
-net.show("knowledge_graph.html")
-# # Perform naive search
-# print(
-#     rag.query("What are the top themes in this story?", param=QueryParam(mode="naive"))
-# )
-
-# # Perform local search
-# print(
-#     rag.query("What are the top themes in this story?", param=QueryParam(mode="local"))
-# )
-
-# # Perform global search
-# print(
-#     rag.query("What are the top themes in this story?", param=QueryParam(mode="global"))
-# )
-
-# # Perform hybrid search
-# print(
-#     rag.query("What are the top themes in this story?", param=QueryParam(mode="hybrid"))
-# )
+# net.show("knowledge_graph.html")
 
 # Perform naive search
+
+content = "厂区生产厂房设置有环形通道，运输、消防等车辆可直达车间各出入口。厂区内设置环形道路，宽约 $5\mathrm{m}$ ，转弯半径约 $6\mathrm{m}$ ，厂区尽端式道路应有足够的消防车回转场地。厂区北侧中部设置有一个出入口作为货运、人流出入口。告诉我以上内容要使用那哪些法规去进行评估"
+
 # print(
-#     rag.query("文本内容的主题是什么？", param=QueryParam(mode="naive"))
+#     rag.query(content, param=QueryParam(mode="naive"))
 # )
 
 # # Perform local search
 # print(
-#     rag.query("文本内容的主题是什么？", param=QueryParam(mode="local"))
+#     rag.query(content, param=QueryParam(mode="local"))
 # )
 
 # # Perform global search
 # print(
-#     rag.query("文本内容的主题是什么？", param=QueryParam(mode="global"))
+#     rag.query(content, param=QueryParam(mode="global"))
 # )
 
-# # Perform hybrid search
-# print(
-#     rag.query("文本内容的主题是什么？", param=QueryParam(mode="hybrid"))
-# )
+# Perform hybrid search
+print(
+    rag.query(content, param=QueryParam(mode="hybrid"))
+)
 
-# # stream response 这个模块有点问题
+answer = rag.query(content, param=QueryParam(mode="hybrid"), )
+
+# 使用正则表达式提取法规编号
+pattern = r'\*\*(.*?)\*\*'
+matches = re.findall(pattern, answer)
+
+# 将提取的法规编号构成数组
+regulations_array = [match.strip() for match in matches]
+
+# 将结果存储到 LawList.txt 文件中
+with open("LawList.txt", "w", encoding="utf-8") as file:
+    for regulation in regulations_array:
+        file.write(f"{regulation}\n") 
+
+# 输出结果
+print(regulations_array)
+
+# def answer_format(answer):
+
+# stream response 这个模块有点问题
 # resp = rag.query(
 #     "文本内容的主题是什么？",
 #     param=QueryParam(mode="hybrid", stream=True),

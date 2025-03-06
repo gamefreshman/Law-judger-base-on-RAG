@@ -1,0 +1,1338 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d5" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;上风侧&quot;">
+  <data key="d0">"地理位置"</data>
+  <data key="d1">"上风侧是指空气洁净度要求严格的工序应该布置在空气流动方向的上侧。"&lt;SEP&gt;"上风侧是指风向吹来的方向，即风的来源方向。"</data>
+  <data key="d2">chunk-e97ad6248aed92648e14ccd00caa82e5&lt;SEP&gt;chunk-f8c803ba33bf15b3c6bd94bebedd2ba2</data>
+</node>
+<node id="&quot;工序&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"工序是指工厂中特定的生产活动或步骤，需要按照法规进行布置。"</data>
+  <data key="d2">chunk-f8c803ba33bf15b3c6bd94bebedd2ba2</data>
+</node>
+<node id="&quot;物料&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"物料是指工厂中使用的原材料或成品，其传递路线受到法规的规范。"</data>
+  <data key="d2">chunk-f8c803ba33bf15b3c6bd94bebedd2ba2</data>
+</node>
+<node id="&quot;设备安装口和检修口&quot;">
+  <data key="d0">"LOCATION"</data>
+  <data key="d1">"设备安装口和检修口是为大型设备的安装和维修预留的位置。"</data>
+  <data key="d2">chunk-f8c803ba33bf15b3c6bd94bebedd2ba2</data>
+</node>
+<node id="&quot;GB50073-2013_4.2.1&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"GB50073-2013_4.2.1 是一条法规，规定了工厂平面布置的要求。"</data>
+  <data key="d2">chunk-f8c803ba33bf15b3c6bd94bebedd2ba2</data>
+</node>
+<node id="&quot;物料人口&quot;">
+  <data key="d0">"LOCATION"</data>
+  <data key="d1">"物料人口是指物料进入洁净室(区)的入口。"</data>
+  <data key="d2">chunk-f8c803ba33bf15b3c6bd94bebedd2ba2</data>
+</node>
+<node id="&quot;洁净区&quot;">
+  <data key="d0">"地点"</data>
+  <data key="d1">"洁净区是指工厂中需要保持高空气洁净度的区域，应符合特定的布置要求。"&lt;SEP&gt;"洁净区是洁净厂房中要求高洁净度的区域。"</data>
+  <data key="d2">chunk-b52878e756cf1642722ae75ed7234d39&lt;SEP&gt;chunk-f8c803ba33bf15b3c6bd94bebedd2ba2</data>
+</node>
+<node id="&quot;工艺设备&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"工艺设备是指用于特定工序的设备，其布置受到法规的限制。"</data>
+  <data key="d2">chunk-f8c803ba33bf15b3c6bd94bebedd2ba2</data>
+</node>
+<node id="&quot;工厂&quot;">
+  <data key="d0">"LOCATION"</data>
+  <data key="d1">"工厂是指实施上述法规的地点，规定了平面布置的具体要求。"</data>
+  <data key="d2">chunk-f8c803ba33bf15b3c6bd94bebedd2ba2</data>
+</node>
+<node id="&quot;气闸室&quot;">
+  <data key="d0">"LOCATION"</data>
+  <data key="d1">"气闸室是用于防止污染的设施，通常用于控制洁净室内的空气流动。"</data>
+  <data key="d2">chunk-f8c803ba33bf15b3c6bd94bebedd2ba2</data>
+</node>
+<node id="&quot;回风口位置&quot;">
+  <data key="d0">"LOCATION"</data>
+  <data key="d1">"回风口位置是指空气经过过滤后返回到车间内的位置。"</data>
+  <data key="d2">chunk-f8c803ba33bf15b3c6bd94bebedd2ba2</data>
+</node>
+<node id="&quot;传递窗&quot;">
+  <data key="d0">"LOCATION"</data>
+  <data key="d1">"传递窗是洁净室与外界或不同洁净度区域之间传递物料和物品的设施。"</data>
+  <data key="d2">chunk-f8c803ba33bf15b3c6bd94bebedd2ba2</data>
+</node>
+<node id="&quot;空气调节机房&quot;">
+  <data key="d0">"LOCATION"</data>
+  <data key="d1">"空气调节机房是用于调节和维持空气洁净度的设备所在区域。"</data>
+  <data key="d2">chunk-f8c803ba33bf15b3c6bd94bebedd2ba2</data>
+</node>
+<node id="&quot;人物&quot;">
+  <data key="d0">"无具体人物名称"</data>
+  <data key="d1">"文本中未提及具体人物，但提到了对法规执行和实施的相关人物。"&lt;SEP&gt;"文本中未提及特定人物，所有内容均围绕法规和洁净厂房设计。"&lt;SEP&gt;"文本中未提及具体人物，但提到了法规和管道，可能涉及相关人物的操作或管理。"</data>
+  <data key="d2">chunk-b52878e756cf1642722ae75ed7234d39&lt;SEP&gt;chunk-a270926e16a7a29271ea480ac49d29a9&lt;SEP&gt;chunk-0bfcf325622297ba18e80adac07b2427</data>
+</node>
+<node id="&quot;管线布置&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"管线布置是指洁净厂房中管线的布置。"</data>
+  <data key="d2">chunk-b52878e756cf1642722ae75ed7234d39</data>
+</node>
+<node id="&quot;空气洁净度等级&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"空气洁净度等级是指空气中允许的尘埃颗粒的数量和大小，用于确定洁净厂房的洁净程度。"</data>
+  <data key="d2">chunk-b52878e756cf1642722ae75ed7234d39</data>
+</node>
+<node id="&quot;GB50073-2013_4.2.2&quot;">
+  <data key="d0">"法规"</data>
+  <data key="d1">"GB50073-2013_4.2.2 是一项关于洁净厂房设计要求的法规，规定了平面和空间设计应满足生产工艺和空气洁净度等级要求。"</data>
+  <data key="d2">chunk-b52878e756cf1642722ae75ed7234d39</data>
+</node>
+<node id="&quot;辅助用房&quot;">
+  <data key="d0">"地点"</data>
+  <data key="d1">"辅助用房是指洁净厂房中用于支持生产活动但不直接参与生产过程的房间。"</data>
+  <data key="d2">chunk-b52878e756cf1642722ae75ed7234d39</data>
+</node>
+<node id="&quot;工艺设备安装和维修&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"工艺设备安装和维修是指洁净厂房中设备的安装和维修活动。"</data>
+  <data key="d2">chunk-b52878e756cf1642722ae75ed7234d39</data>
+</node>
+<node id="&quot;地理位置&quot;">
+  <data key="d0">"无具体地理位置名称"</data>
+  <data key="d1">"文本中未提及具体地理位置，但提到了法规的名称，可能涉及特定的地理位置或区域。"&lt;SEP&gt;"文本中未提及特定地理位置，所有内容均围绕法规和洁净厂房设计。"</data>
+  <data key="d2">chunk-b52878e756cf1642722ae75ed7234d39&lt;SEP&gt;chunk-0bfcf325622297ba18e80adac07b2427</data>
+</node>
+<node id="&quot;气流流型&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"气流流型是指洁净厂房中空气流动的形态。"</data>
+  <data key="d2">chunk-b52878e756cf1642722ae75ed7234d39</data>
+</node>
+<node id="&quot;事件&quot;">
+  <data key="d0">"无具体事件名称"</data>
+  <data key="d1">"文本中未提及具体事件，但提到了法规的名称，可能涉及与法规相关的某些事件或情况。"&lt;SEP&gt;"文本中未提及具体事件，但提到了法规的实施和应用。"&lt;SEP&gt;"文本中未提及特定事件，所有内容均围绕法规和洁净厂房设计。"</data>
+  <data key="d2">chunk-b52878e756cf1642722ae75ed7234d39&lt;SEP&gt;chunk-a270926e16a7a29271ea480ac49d29a9&lt;SEP&gt;chunk-0bfcf325622297ba18e80adac07b2427</data>
+</node>
+<node id="&quot;生产操作&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"生产操作是指洁净厂房中的生产活动。"</data>
+  <data key="d2">chunk-b52878e756cf1642722ae75ed7234d39</data>
+</node>
+<node id="&quot;净化空调系统&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"净化空调系统是一个组织，其要求在洁净厂房的技术设施布置中优先考虑。"&lt;SEP&gt;"净化空调系统是指用于洁净厂房的空气净化和调节温度的设备系统。"</data>
+  <data key="d2">chunk-b52878e756cf1642722ae75ed7234d39&lt;SEP&gt;chunk-a270926e16a7a29271ea480ac49d29a9</data>
+</node>
+<node id="&quot;洁净厂房&quot;">
+  <data key="d0">"LOCATION"</data>
+  <data key="d1">"洁净厂房是一个特定的地理位置，其技术设施的布置受到法规GB50073-2013_4.2.4的约束。"&lt;SEP&gt;"洁净厂房是指满足特定生产工艺和空气洁净度等级要求的厂房。"</data>
+  <data key="d2">chunk-b52878e756cf1642722ae75ed7234d39&lt;SEP&gt;chunk-a270926e16a7a29271ea480ac49d29a9</data>
+</node>
+<node id="&quot;组织&quot;">
+  <data key="d0">"无具体组织名称"</data>
+  <data key="d1">"文本中未提及具体组织，但提到了法规，可能涉及相关组织的管理或制定。"&lt;SEP&gt;"文本中未提及特定组织，但提到了法规，可能涉及某个或某些组织机构。"&lt;SEP&gt;"组织指的是法规GB50073-2013_4.2.4所涉及的管理实体。"</data>
+  <data key="d2">chunk-b52878e756cf1642722ae75ed7234d39&lt;SEP&gt;chunk-a270926e16a7a29271ea480ac49d29a9&lt;SEP&gt;chunk-0bfcf325622297ba18e80adac07b2427</data>
+</node>
+<node id="&quot;物料净化&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"物料净化是指对进入洁净厂房的物料进行净化处理，以防止污染。"</data>
+  <data key="d2">chunk-b52878e756cf1642722ae75ed7234d39</data>
+</node>
+<node id="&quot;类别&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"文本中未提及特定类别，所有内容均围绕法规和洁净厂房设计。"&lt;SEP&gt;"类别包括洁净厂房内的各种固定技术设施，如送风口、照明器、回风口、管线等。"</data>
+  <data key="d2">chunk-b52878e756cf1642722ae75ed7234d39&lt;SEP&gt;chunk-a270926e16a7a29271ea480ac49d29a9</data>
+</node>
+<node id="&quot;人员净化&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"人员净化是指通过特定的手段和方法对人员进行净化处理，以保持洁净厂房的洁净度。"</data>
+  <data key="d2">chunk-b52878e756cf1642722ae75ed7234d39</data>
+</node>
+<node id="&quot;生产工艺&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"生产工艺是指生产过程中使用的各种技术、方法和流程。"</data>
+  <data key="d2">chunk-b52878e756cf1642722ae75ed7234d39</data>
+</node>
+<node id="&quot;回风口&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"回风口是洁净厂房内的一种固定技术设施，其布置需符合法规GB50073-2013_4.2.4的要求。"</data>
+  <data key="d2">chunk-a270926e16a7a29271ea480ac49d29a9</data>
+</node>
+<node id="&quot;照明器&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"照明器是洁净厂房内的一种固定技术设施，其布置需符合法规GB50073-2013_4.2.4的要求。"</data>
+  <data key="d2">chunk-a270926e16a7a29271ea480ac49d29a9</data>
+</node>
+<node id="&quot;送风口&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"送风口是洁净厂房内的一种固定技术设施，其布置需符合法规GB50073-2013_4.2.4的要求。"</data>
+  <data key="d2">chunk-a270926e16a7a29271ea480ac49d29a9</data>
+</node>
+<node id="&quot;管线&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"管线是洁净厂房内的一种固定技术设施，其布置需符合法规GB50073-2013_4.2.4的要求。"</data>
+  <data key="d2">chunk-a270926e16a7a29271ea480ac49d29a9</data>
+</node>
+<node id="&quot;GB50073-2013_4.2.4&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"GB50073-2013_4.2.4 是一条法规，规定了洁净厂房内固定技术设施的布置要求。"</data>
+  <data key="d2">chunk-a270926e16a7a29271ea480ac49d29a9</data>
+</node>
+<node id="&quot;技术经济条件&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"技术经济条件是指工业企业进行生产所需的技术和经济条件。"</data>
+  <data key="d2">chunk-687a5369e1f7e2fc3d7b4ff072635e75</data>
+</node>
+<node id="&quot;辅助生产区&quot;">
+  <data key="d0">"地理位置"</data>
+  <data key="d1">"辅助生产区应布置在生产区和非生产区之间。"&lt;SEP&gt;"辅助生产区是工业企业厂区中的一个功能分区，指为生产活动提供辅助服务的区域。"&lt;SEP&gt;"辅助生产区是指为生产区提供辅助服务的区域。"</data>
+  <data key="d2">chunk-687a5369e1f7e2fc3d7b4ff072635e75&lt;SEP&gt;chunk-e97ad6248aed92648e14ccd00caa82e5</data>
+</node>
+<node id="&quot;生产区&quot;">
+  <data key="d0">"地理位置"</data>
+  <data key="d1">"生产区应选择在大气污染物扩散条件好的地段，并布置在当地全年最小频率风向的上风侧。"&lt;SEP&gt;"生产区是工业企业厂区中的一个功能分区，指用于生产活动的区域。"</data>
+  <data key="d2">chunk-687a5369e1f7e2fc3d7b4ff072635e75&lt;SEP&gt;chunk-e97ad6248aed92648e14ccd00caa82e5</data>
+</node>
+<node id="&quot;卫生要求&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"卫生要求是指工业企业厂区总平面布置时需要考虑的卫生条件。"</data>
+  <data key="d2">chunk-687a5369e1f7e2fc3d7b4ff072635e75</data>
+</node>
+<node id="&quot;场地自然条件&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"场地自然条件是指工业企业厂区所在地的自然环境。"</data>
+  <data key="d2">chunk-687a5369e1f7e2fc3d7b4ff072635e75</data>
+</node>
+<node id="&quot;非生产区&quot;">
+  <data key="d0">"地理位置"</data>
+  <data key="d1">"非生产区应布置在当地全年最小频率风向的下风侧，以减少对非生产区的影响。"&lt;SEP&gt;"非生产区是工业企业厂区中的一个功能分区，指不用于生产活动的区域。"</data>
+  <data key="d2">chunk-687a5369e1f7e2fc3d7b4ff072635e75&lt;SEP&gt;chunk-e97ad6248aed92648e14ccd00caa82e5</data>
+</node>
+<node id="&quot;工业企业&quot;">
+  <data key="d0">"组织"</data>
+  <data key="d1">"工业企业是一个组织，其厂区总平面布置需要按照 GBZ_T194-2007_4.1.4 法规进行合理布局。"&lt;SEP&gt;"工业企业是一个组织，其总平面布置需要符合GB 50187等国家相关标准。"&lt;SEP&gt;"工业企业是指从事生产活动的企业，其厂区总平面功能分区需要遵循GBZ1-2010_5.2.1.3的规定。"&lt;SEP&gt;"工业企业是法规的适用对象，涉及总平面布置和职业性有害因素的设施管理。"</data>
+  <data key="d2">chunk-61c1c9ac7685b82103974501853ee5c1&lt;SEP&gt;chunk-e4cbf8d982dfa09d4cac9023961646c8&lt;SEP&gt;chunk-48cd3127f3af386fb5c44be090c7c520&lt;SEP&gt;chunk-687a5369e1f7e2fc3d7b4ff072635e75</data>
+</node>
+<node id="&quot;生产流程&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"生产流程是指工业企业生产产品的过程。"</data>
+  <data key="d2">chunk-687a5369e1f7e2fc3d7b4ff072635e75</data>
+</node>
+<node id="&quot;交通运输&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"交通运输是指工业企业厂区内部和外部的运输方式。"</data>
+  <data key="d2">chunk-687a5369e1f7e2fc3d7b4ff072635e75</data>
+</node>
+<node id="&quot;GBZ_T194-2007_4.1.4&quot;">
+  <data key="d0">"法规"</data>
+  <data key="d1">"GBZ_T194-2007_4.1.4 是一条关于厂区道路布置的法规，要求厂区道路布置应符合国家现行防火规范，并规定消防车回转场地和有毒有害物质工作场所通道的宽度。"&lt;SEP&gt;"GBZ_T194-2007_4.1.4 是一项法规，规定了工业企业厂区总平面布置的要求。"</data>
+  <data key="d2">chunk-366f72aaad4e8d022c078324aa915bdf&lt;SEP&gt;chunk-687a5369e1f7e2fc3d7b4ff072635e75</data>
+</node>
+<node id="&quot;性质&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"性质指的是工业企业的特性或特点。"</data>
+  <data key="d2">chunk-687a5369e1f7e2fc3d7b4ff072635e75</data>
+</node>
+<node id="&quot;规模&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"规模指的是工业企业的规模大小。"</data>
+  <data key="d2">chunk-687a5369e1f7e2fc3d7b4ff072635e75</data>
+</node>
+<node id="&quot;工程用地&quot;">
+  <data key="d0">"地理位置"</data>
+  <data key="d1">"工程用地是指工业企业厂区中用于建筑和工程建设的土地。"</data>
+  <data key="d2">chunk-687a5369e1f7e2fc3d7b4ff072635e75</data>
+</node>
+<node id="&quot;建筑物现状&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"建筑物现状是指现有的建筑物布局和状况。"</data>
+  <data key="d2">chunk-48cd3127f3af386fb5c44be090c7c520</data>
+</node>
+<node id="&quot;卫生防护&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"卫生防护是指企业内对卫生和防护措施的要求。"&lt;SEP&gt;"卫生防护是指工业企业内为保障员工和公众健康而采取的措施。"</data>
+  <data key="d2">chunk-48cd3127f3af386fb5c44be090c7c520</data>
+</node>
+<node id="&quot;工业企业总平面布置&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"工业企业总平面布置是一个类别，指的是工业企业建筑物、道路、卫生防护、绿化等方面的布局和设计。"</data>
+  <data key="d2">chunk-48cd3127f3af386fb5c44be090c7c520</data>
+</node>
+<node id="&quot;拟建建筑物位置&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"拟建建筑物位置是指计划建设的建筑物在总平面布置中的位置。"</data>
+  <data key="d2">chunk-48cd3127f3af386fb5c44be090c7c520</data>
+</node>
+<node id="&quot;道路&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"道路是厂区内用于交通的路径，需要遵守特定的安全规范。"&lt;SEP&gt;"道路是指企业内的道路布局和设计。"&lt;SEP&gt;"道路是指工业企业内连接各个区域的通道。"&lt;SEP&gt;"道路是指库房、罐区或储罐区周围的交通路线，需要满足特定的安全要求。"</data>
+  <data key="d2">chunk-366f72aaad4e8d022c078324aa915bdf&lt;SEP&gt;chunk-d39a9ce0e068d4037af376c3a1821281&lt;SEP&gt;chunk-48cd3127f3af386fb5c44be090c7c520</data>
+</node>
+<node id="&quot;GBZ1-2010_5.2.1.2&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"GBZ1-2010_5.2.1.2 是一项法规要求，规定了工业企业总平面布置的标准要求。"</data>
+  <data key="d2">chunk-48cd3127f3af386fb5c44be090c7c520</data>
+</node>
+<node id="&quot;建筑物&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"建筑物是指工业企业中的建筑物，包括现有和拟建的。"</data>
+  <data key="d2">chunk-48cd3127f3af386fb5c44be090c7c520</data>
+</node>
+<node id="&quot;GB 50187&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"GB 50187 是一个组织，代表了一项国家相关标准，用于指导工业企业总平面布置。"</data>
+  <data key="d2">chunk-48cd3127f3af386fb5c44be090c7c520</data>
+</node>
+<node id="&quot;绿化&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"绿化是指企业内的绿化布局和设计。"&lt;SEP&gt;"绿化是指工业企业内用于美化环境和改善生态的措施。"</data>
+  <data key="d2">chunk-48cd3127f3af386fb5c44be090c7c520</data>
+</node>
+<node id="&quot;位置&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"位置是指建筑物、道路、卫生防护和绿化等在总平面布置中的具体位置。"</data>
+  <data key="d2">chunk-48cd3127f3af386fb5c44be090c7c520</data>
+</node>
+<node id="&quot;有害物质&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"有害物质包括化学和生物等物质，其散发车间需位于上风侧以减少对环境的影响。"&lt;SEP&gt;"有害物质是指对人体健康和环境有害的物质，其产生建筑需要与洁净要求较高的建筑保持适当间距或分隔。"</data>
+  <data key="d2">chunk-e97ad6248aed92648e14ccd00caa82e5&lt;SEP&gt;chunk-e4cbf8d982dfa09d4cac9023961646c8</data>
+</node>
+<node id="&quot;分期建设项目&quot;">
+  <data key="d0">"事件"</data>
+  <data key="d1">"分期建设项目指的是分阶段进行建设的项目，其规划需要考虑整体性，避免破坏原功能分区。"</data>
+  <data key="d2">chunk-e4cbf8d982dfa09d4cac9023961646c8</data>
+</node>
+<node id="&quot;单体建筑&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"单体建筑是指独立的一栋建筑，其在厂区总平面功能分区中需要有序合理地布置。"</data>
+  <data key="d2">chunk-e4cbf8d982dfa09d4cac9023961646c8</data>
+</node>
+<node id="&quot;厂区总平面功能分区原则&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"厂区总平面功能分区原则是指导工业企业厂区布局和功能划分的原则。"</data>
+  <data key="d2">chunk-e4cbf8d982dfa09d4cac9023961646c8</data>
+</node>
+<node id="&quot;环境质量&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"环境质量是指环境中的物理、化学和生物因素的综合状况，其要求较高时，相关建筑应有适当的间距或分隔。"</data>
+  <data key="d2">chunk-e4cbf8d982dfa09d4cac9023961646c8</data>
+</node>
+<node id="&quot;GBZ1-2010_5.2.1.3&quot;">
+  <data key="d0">"法规"</data>
+  <data key="d1">"GBZ1-2010_5.2.1.3 是一条关于工业企业厂区总平面功能分区原则的法规，规定了分期建设项目应整体规划，以及各类建筑的合理布置要求。"</data>
+  <data key="d2">chunk-e4cbf8d982dfa09d4cac9023961646c8</data>
+</node>
+<node id="&quot;生产车间&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"生产车间是用于生产的建筑物，其布置应在生产区内，以满足GBZ1-2010_5.2.1.3的规定。"</data>
+  <data key="d2">chunk-e4cbf8d982dfa09d4cac9023961646c8</data>
+</node>
+<node id="&quot;行政办公用房&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"行政办公用房是用于行政办公的建筑物，应设置在非生产区，以符合GBZ1-2010_5.2.1.3的规定。"</data>
+  <data key="d2">chunk-e4cbf8d982dfa09d4cac9023961646c8</data>
+</node>
+<node id="&quot;洁净要求&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"洁净要求是指对环境中的污染物含量的要求，特别是对于对环境质量要求较高的建筑。"</data>
+  <data key="d2">chunk-e4cbf8d982dfa09d4cac9023961646c8</data>
+</node>
+<node id="&quot;辅助用室&quot;">
+  <data key="d0">"地理位置"</data>
+  <data key="d1">"辅助用室是一个地理位置，法规要求挥发性气体和蒸汽的管道不宜从其空中和地下通道通过。"&lt;SEP&gt;"辅助用室是辅助生产的建筑物，其布置也应在生产区内，以符合GBZ1-2010_5.2.1.3的规定。"</data>
+  <data key="d2">chunk-e4cbf8d982dfa09d4cac9023961646c8&lt;SEP&gt;chunk-0bfcf325622297ba18e80adac07b2427</data>
+</node>
+<node id="&quot;法规&quot;">
+  <data key="d2">chunk-29e9826fcd7b2d17c04863bb34002304&lt;SEP&gt;chunk-e4cbf8d982dfa09d4cac9023961646c8</data>
+  <data key="d1">"法规是对生产设备安装位置和措施进行规定的正式文件。"&lt;SEP&gt;"规定了工业企业厂区总平面功能分区原则"</data>
+  <data key="d0">"类别"</data>
+</node>
+<node id="&quot;车间&quot;">
+  <data key="d0">"组织"</data>
+  <data key="d1">"车间是工业企业中的工作区域，其布局需要考虑职业性有害因素的分布。"&lt;SEP&gt;"车间是指生产场所，需要按照法规要求进行布置。"</data>
+  <data key="d2">chunk-61c1c9ac7685b82103974501853ee5c1&lt;SEP&gt;chunk-e97ad6248aed92648e14ccd00caa82e5</data>
+</node>
+<node id="&quot;大气污染物&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"大气污染物是指对大气环境造成污染的物质。"</data>
+  <data key="d2">chunk-e97ad6248aed92648e14ccd00caa82e5</data>
+</node>
+<node id="&quot;下风侧&quot;">
+  <data key="d0">"地理位置"</data>
+  <data key="d1">"下风侧是指风向离开的方向，即风的去向方向。"</data>
+  <data key="d2">chunk-e97ad6248aed92648e14ccd00caa82e5</data>
+</node>
+<node id="&quot;GBZ1-2010_5.2.1.4&quot;">
+  <data key="d0">"法规"</data>
+  <data key="d1">"GBZ1-2010_5.2.1.4是一条法规，具体规定了生产区、有害物质散发车间以及非生产区的布置要求。"</data>
+  <data key="d2">chunk-e97ad6248aed92648e14ccd00caa82e5</data>
+</node>
+<node id="&quot;相邻车间&quot;">
+  <data key="d0">"组织"</data>
+  <data key="d1">"相邻车间是指与产生并散发有害物质的车间相邻的生产场所。"</data>
+  <data key="d2">chunk-e97ad6248aed92648e14ccd00caa82e5</data>
+</node>
+<node id="&quot;全年最小频率风向&quot;">
+  <data key="d0">"地理位置"</data>
+  <data key="d1">"全年最小频率风向是指一年中风向频率最低的风向。"</data>
+  <data key="d2">chunk-e97ad6248aed92648e14ccd00caa82e5</data>
+</node>
+<node id="&quot;GBZ1&quot;">
+  <data key="d0">"组织"</data>
+  <data key="d1">"GBZ1是一个组织，其下包含了GBZ1-2010_5.2.1.4这样的法规。"</data>
+  <data key="d2">chunk-e97ad6248aed92648e14ccd00caa82e5</data>
+</node>
+<node id="&quot;主体工程&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"主体工程指的是工业企业的核心建设项目，其需要是总平面布置规划的基础。"</data>
+  <data key="d2">chunk-61c1c9ac7685b82103974501853ee5c1</data>
+</node>
+<node id="&quot;生活区&quot;">
+  <data key="d0">"地理位置"</data>
+  <data key="d1">"生活区指的是工业企业内为员工提供生活设施的区域。"</data>
+  <data key="d2">chunk-61c1c9ac7685b82103974501853ee5c1</data>
+</node>
+<node id="&quot;设施&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"设施指的是工业企业中的具体建设或设备，包括可能产生职业性有害因素的设施。"</data>
+  <data key="d2">chunk-61c1c9ac7685b82103974501853ee5c1</data>
+</node>
+<node id="&quot;卫生防护绿化带&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"卫生防护绿化带是指用于减少职业性有害因素影响的植被区域。"</data>
+  <data key="d2">chunk-61c1c9ac7685b82103974501853ee5c1</data>
+</node>
+<node id="&quot;GBZ1-2010_5.2.1.5&quot;">
+  <data key="d0">"法规"</data>
+  <data key="d1">"GBZ1-2010_5.2.1.5是一条关于工业企业总平面布置的法规，要求在满足主体工程需要的前提下，合理布局可能产生职业性有害因素的设施。"</data>
+  <data key="d2">chunk-61c1c9ac7685b82103974501853ee5c1</data>
+</node>
+<node id="&quot;职业性有害因素&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"职业性有害因素指的是可能对员工健康造成危害的物质或条件。"</data>
+  <data key="d2">chunk-61c1c9ac7685b82103974501853ee5c1</data>
+</node>
+<node id="&quot;夹角&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"夹角指的是两个方向之间的角度。"</data>
+  <data key="d2">chunk-2da62a367a4af653552b4e1964362c8c</data>
+</node>
+<node id="&quot;当地夏季主导风向&quot;">
+  <data key="d0">"地理位置"</data>
+  <data key="d1">"当地夏季主导风向指的是特定地区夏季常见的风向。"</data>
+  <data key="d2">chunk-2da62a367a4af653552b4e1964362c8c</data>
+</node>
+<node id="&quot;条件限制&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"条件限制指的是在实际情况中可能遇到的障碍或限制。"</data>
+  <data key="d2">chunk-2da62a367a4af653552b4e1964362c8c</data>
+</node>
+<node id="&quot;高温车间&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"高温车间指的是工作环境，需要遵守特定的安全规定。"</data>
+  <data key="d2">chunk-2da62a367a4af653552b4e1964362c8c</data>
+</node>
+<node id="&quot;GBZ1-2010_5.2.1.8&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"GBZ1-2010_5.2.1.8 是一项法规要求，规定了高温车间纵轴与当地夏季主导风向的关系。"</data>
+  <data key="d2">chunk-2da62a367a4af653552b4e1964362c8c</data>
+</node>
+<node id="&quot;法规要求&quot;">
+  <data key="d2">chunk-2da62a367a4af653552b4e1964362c8c</data>
+  <data key="d1">"GBZ1-2010_5.2.1.8 明确了高温车间纵轴与风向的具体要求，这是法规的核心内容。"</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;放散大量热量或有害气体的厂房&quot;">
+  <data key="d0">"地点"</data>
+  <data key="d1">"放散大量热量或有害气体的厂房需要特殊的设计和布局来防止污染。"</data>
+  <data key="d2">chunk-117d80d9e473bdc0697b332828ac4e57</data>
+</node>
+<node id="&quot;单层建筑&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"单层建筑是指没有楼层的建筑，适合放置放散大量热量或有害气体的厂房。"</data>
+  <data key="d2">chunk-117d80d9e473bdc0697b332828ac4e57</data>
+</node>
+<node id="&quot;上层工作环境&quot;">
+  <data key="d0">"地点"</data>
+  <data key="d1">"上层工作环境是指多层建筑物中位于放散热和有害气体排放设施之上的工作区域。"</data>
+  <data key="d2">chunk-117d80d9e473bdc0697b332828ac4e57</data>
+</node>
+<node id="&quot;有效措施&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"有效措施是指为了防止污染上层工作环境而采取的具体行动或设计。"</data>
+  <data key="d2">chunk-117d80d9e473bdc0697b332828ac4e57</data>
+</node>
+<node id="&quot;建筑物的高层&quot;">
+  <data key="d0">"地理位置"</data>
+  <data key="d1">"建筑物的高层指的是多层建筑物中的上层部分，通常用于放置放散热和有害气体的生产过程。"</data>
+  <data key="d2">chunk-117d80d9e473bdc0697b332828ac4e57</data>
+</node>
+<node id="&quot;多层建筑物&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"多层建筑物是指有多个楼层的建筑，需要特别注意放散热和有害气体的排放处理。"</data>
+  <data key="d2">chunk-117d80d9e473bdc0697b332828ac4e57</data>
+</node>
+<node id="&quot;GBZ1-2010_5.2.2.1&quot;">
+  <data key="d0">"法规"</data>
+  <data key="d1">"GBZ1-2010_5.2.2.1 是一项具体法规，规定了放散大量热量或有害气体的厂房的建筑要求。"</data>
+  <data key="d2">chunk-117d80d9e473bdc0697b332828ac4e57</data>
+</node>
+<node id="&quot;厂房&quot;">
+  <data key="d2">chunk-117d80d9e473bdc0697b332828ac4e57</data>
+  <data key="d1">"GBZ1-2010_5.2.2.1 规定了厂房的建筑要求，特别是关于放散热和有害气体排放的处理。"</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;多层厂房&quot;">
+  <data key="d0">"地理位置"</data>
+  <data key="d1">"多层厂房是另一种可能的生产设备安装位置，但需要采取额外措施。"</data>
+  <data key="d2">chunk-29e9826fcd7b2d17c04863bb34002304</data>
+</node>
+<node id="&quot;噪声与振动&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"噪声与振动是生产设备的一个显著属性，需要在安装时考虑。"</data>
+  <data key="d2">chunk-29e9826fcd7b2d17c04863bb34002304</data>
+</node>
+<node id="&quot;GBZ1-2010_5.2.2.2&quot;">
+  <data key="d0">"法规"</data>
+  <data key="d1">"GBZ1-2010_5.2.2.2 是一项关于噪声与振动较大的生产设备安装位置和措施的法规。"</data>
+  <data key="d2">chunk-29e9826fcd7b2d17c04863bb34002304</data>
+</node>
+<node id="&quot;生产设备&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"生产设备是指噪声与振动较大的设备，其安装位置受到法规的规范。"</data>
+  <data key="d2">chunk-29e9826fcd7b2d17c04863bb34002304</data>
+</node>
+<node id="&quot;单层厂房&quot;">
+  <data key="d0">"地理位置"</data>
+  <data key="d1">"单层厂房是生产设备安装的一种位置，符合法规的要求。"</data>
+  <data key="d2">chunk-29e9826fcd7b2d17c04863bb34002304</data>
+</node>
+<node id="&quot;有效的隔声和减振措施&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"有效的隔声和减振措施是安装噪声与振动较大的生产设备时必须采取的防护措施。"</data>
+  <data key="d2">chunk-29e9826fcd7b2d17c04863bb34002304</data>
+</node>
+<node id="&quot;GBZ1-2010_5.2.2.3&quot;">
+  <data key="d0">"法规"</data>
+  <data key="d1">"GBZ1-2010_5.2.2.3是一条法规，规定了有关挥发性气体和蒸汽管道的安全要求。"</data>
+  <data key="d2">chunk-0bfcf325622297ba18e80adac07b2427</data>
+</node>
+<node id="&quot;蒸汽&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"蒸汽是一种类别，法规要求其管道不宜从特定区域通过。"</data>
+  <data key="d2">chunk-0bfcf325622297ba18e80adac07b2427</data>
+</node>
+<node id="&quot;挥发性气体&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"挥发性气体是一种类别，法规要求其管道不宜从特定区域通过。"</data>
+  <data key="d2">chunk-0bfcf325622297ba18e80adac07b2427</data>
+</node>
+<node id="&quot;仪表控制室&quot;">
+  <data key="d0">"地理位置"</data>
+  <data key="d1">"仪表控制室是一个地理位置，法规要求挥发性气体和蒸汽的管道不宜从其空中和地下通道通过。"</data>
+  <data key="d2">chunk-0bfcf325622297ba18e80adac07b2427</data>
+</node>
+<node id="&quot;管道&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"管道是一种类别，法规要求含有挥发性气体和蒸汽的管道在特定条件下通过。"</data>
+  <data key="d2">chunk-0bfcf325622297ba18e80adac07b2427</data>
+</node>
+<node id="&quot;通道&quot;">
+  <data key="d0">"地点"</data>
+  <data key="d1">"通道是指厂区内供人员或设备通行的狭窄空间，需要足够宽以便安全通行。"</data>
+  <data key="d2">chunk-366f72aaad4e8d022c078324aa915bdf</data>
+</node>
+<node id="&quot;厂区&quot;">
+  <data key="d0">"地点"</data>
+  <data key="d1">"厂区是指生产或办公的特定区域，其中包含道路、工作场所等。"</data>
+  <data key="d2">chunk-366f72aaad4e8d022c078324aa915bdf</data>
+</node>
+<node id="&quot;国家现行防火规范&quot;">
+  <data key="d0">"法规"</data>
+  <data key="d1">"国家现行防火规范是指导厂区道路布置的重要法规，确保消防安全。"</data>
+  <data key="d2">chunk-366f72aaad4e8d022c078324aa915bdf</data>
+</node>
+<node id="&quot;有毒有害物质工作场所&quot;">
+  <data key="d0">"地点"</data>
+  <data key="d1">"有毒有害物质工作场所是指厂区内可能产生有毒有害物质的工作区域，需要特别的安全措施。"</data>
+  <data key="d2">chunk-366f72aaad4e8d022c078324aa915bdf</data>
+</node>
+<node id="&quot;宽度&quot;">
+  <data key="d0">"类别"</data>
+  <data key="d1">"宽度是一个物理量，用于描述空间的大小，此处指的是通道和消防车回转场地的最小尺寸。"</data>
+  <data key="d2">chunk-366f72aaad4e8d022c078324aa915bdf</data>
+</node>
+<node id="&quot;厂区道路布置&quot;">
+  <data key="d0">"事件"</data>
+  <data key="d1">"厂区道路布置是指根据法规要求，对厂区内的道路进行合理的规划和布置。"</data>
+  <data key="d2">chunk-366f72aaad4e8d022c078324aa915bdf</data>
+</node>
+<node id="&quot;消防车回转场地&quot;">
+  <data key="d0">"地理位置"</data>
+  <data key="d1">"消防车回转场地是指在厂区内设置的特殊区域，用于消防车进行回转操作，便于灭火。"</data>
+  <data key="d2">chunk-366f72aaad4e8d022c078324aa915bdf</data>
+</node>
+<node id="&quot;HG20571-2014_3.2.9&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"HG20571-2014_3.2.9 是一条法规，规定了储存甲、乙类物品的库房、液体罐区和液化烃储罐区的布置要求。"</data>
+  <data key="d2">chunk-d39a9ce0e068d4037af376c3a1821281</data>
+</node>
+<node id="&quot;液体罐区&quot;">
+  <data key="d0">"LOCATION"</data>
+  <data key="d1">"液体罐区是用于储存液体的区域，根据法规要求应布置在厂区边缘地带。"</data>
+  <data key="d2">chunk-d39a9ce0e068d4037af376c3a1821281</data>
+</node>
+<node id="&quot;建筑设计防火规范&quot;">
+  <data key="d0">"STANDARD"</data>
+  <data key="d1">"建筑设计防火规范是现行国家标准GB50016，规定了建筑设计的防火要求。"</data>
+  <data key="d2">chunk-d39a9ce0e068d4037af376c3a1821281</data>
+</node>
+<node id="&quot;国家标准&quot;">
+  <data key="d0">"STANDARD"</data>
+  <data key="d1">"国家标准是指国家规定的标准，用于指导各类建设和生产活动。"</data>
+  <data key="d2">chunk-d39a9ce0e068d4037af376c3a1821281</data>
+</node>
+<node id="&quot;厂区边缘地带&quot;">
+  <data key="d0">"LOCATION"</data>
+  <data key="d1">"厂区边缘地带是指工厂区域的外围地带，根据法规要求是储存特定物品的理想位置。"</data>
+  <data key="d2">chunk-d39a9ce0e068d4037af376c3a1821281</data>
+</node>
+<node id="&quot;库房&quot;">
+  <data key="d0">"LOCATION"</data>
+  <data key="d1">"库房是用于储存物品的建筑物，根据法规要求应布置在厂区边缘地带。"</data>
+  <data key="d2">chunk-d39a9ce0e068d4037af376c3a1821281</data>
+</node>
+<node id="&quot;石油化工企业设计防火规范&quot;">
+  <data key="d0">"STANDARD"</data>
+  <data key="d1">"石油化工企业设计防火规范是现行国家标准GB50160，规定了石油化工企业设计的防火要求。"</data>
+  <data key="d2">chunk-d39a9ce0e068d4037af376c3a1821281</data>
+</node>
+<node id="&quot;储存量&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"储存量是指库房、罐区或储罐区中物品的最大存储量。"</data>
+  <data key="d2">chunk-d39a9ce0e068d4037af376c3a1821281</data>
+</node>
+<node id="&quot;乙类液体&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"乙类液体是指除甲类液体以外的其他易燃、易爆或有毒的液体，其储存需遵守特定规定。"</data>
+  <data key="d2">chunk-d39a9ce0e068d4037af376c3a1821281</data>
+</node>
+<node id="&quot;液化烃储罐区&quot;">
+  <data key="d0">"LOCATION"</data>
+  <data key="d1">"液化烃储罐区是用于储存液化烃的区域，根据法规要求应布置在厂区边缘地带。"</data>
+  <data key="d2">chunk-d39a9ce0e068d4037af376c3a1821281</data>
+</node>
+<node id="&quot;安全疏散&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"安全疏散是指库房、罐区或储罐区在紧急情况下的安全撤离路线和设施。"</data>
+  <data key="d2">chunk-d39a9ce0e068d4037af376c3a1821281</data>
+</node>
+<node id="&quot;乙类物品&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"乙类物品是指储存库房中的一种特定类别物品。"</data>
+  <data key="d2">chunk-d39a9ce0e068d4037af376c3a1821281</data>
+</node>
+<node id="&quot;防火间距&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"防火间距是指库房、罐区或储罐区之间以及与厂区其他区域之间的最小安全距离。"</data>
+  <data key="d2">chunk-d39a9ce0e068d4037af376c3a1821281</data>
+</node>
+<node id="&quot;甲类液体&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"甲类液体是指易燃、易爆或有毒的液体，其储存需遵守特定规定。"</data>
+  <data key="d2">chunk-d39a9ce0e068d4037af376c3a1821281</data>
+</node>
+<node id="&quot;甲类物品&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"甲类物品是指储存库房中的一种特定类别物品。"</data>
+  <data key="d2">chunk-d39a9ce0e068d4037af376c3a1821281</data>
+</node>
+<edge source="&quot;上风侧&quot;" target="&quot;GB50073-2013_4.2.1&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"GB50073-2013_4.2.1 法规要求对空气洁净度要求严格的工序布置在上风侧。"</data>
+  <data key="d5">"布置要求，空气洁净度"</data>
+  <data key="d6">chunk-f8c803ba33bf15b3c6bd94bebedd2ba2</data>
+</edge>
+<edge source="&quot;上风侧&quot;" target="&quot;GBZ1-2010_5.2.1.4&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"GBZ1-2010_5.2.1.4法规要求将生产区布置在上风侧。"</data>
+  <data key="d5">"法规要求，风向布置"</data>
+  <data key="d6">chunk-e97ad6248aed92648e14ccd00caa82e5</data>
+</edge>
+<edge source="&quot;工序&quot;" target="&quot;GB50073-2013_4.2.1&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"GB50073-2013_4.2.1 法规要求相同空气洁净度等级的工序集中布置。"</data>
+  <data key="d5">"布置要求，工序集中"</data>
+  <data key="d6">chunk-f8c803ba33bf15b3c6bd94bebedd2ba2</data>
+</edge>
+<edge source="&quot;物料&quot;" target="&quot;GB50073-2013_4.2.1&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"GB50073-2013_4.2.1 法规要求物料传递路线应最短。"</data>
+  <data key="d5">"布置要求，物料管理"</data>
+  <data key="d6">chunk-f8c803ba33bf15b3c6bd94bebedd2ba2</data>
+</edge>
+<edge source="&quot;设备安装口和检修口&quot;" target="&quot;GB50073-2013_4.2.1&quot;">
+  <data key="d3">4.0</data>
+  <data key="d4">"GB50073-2013_4.2.1 法规要求考虑大型设备安装和维修的运输路线。"</data>
+  <data key="d5">"布置要求，设备维护"</data>
+  <data key="d6">chunk-f8c803ba33bf15b3c6bd94bebedd2ba2</data>
+</edge>
+<edge source="&quot;GB50073-2013_4.2.1&quot;" target="&quot;物料人口&quot;">
+  <data key="d3">1.0</data>
+  <data key="d4">"GB50073-2013_4.2.1 法规要求设置单独的物料人口。"</data>
+  <data key="d5">"布置要求，物料管理"</data>
+  <data key="d6">chunk-f8c803ba33bf15b3c6bd94bebedd2ba2</data>
+</edge>
+<edge source="&quot;GB50073-2013_4.2.1&quot;" target="&quot;回风口位置&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"GB50073-2013_4.2.1 法规要求易产生污染的工艺设备应布置在靠近回风口位置。"</data>
+  <data key="d5">"布置要求，污染控制"</data>
+  <data key="d6">chunk-f8c803ba33bf15b3c6bd94bebedd2ba2</data>
+</edge>
+<edge source="&quot;GB50073-2013_4.2.1&quot;" target="&quot;气闸室&quot;">
+  <data key="d3">3.0</data>
+  <data key="d4">"GB50073-2013_4.2.1 法规要求设有防止污染的措施，如气闸室。"</data>
+  <data key="d5">"布置要求，污染控制"</data>
+  <data key="d6">chunk-f8c803ba33bf15b3c6bd94bebedd2ba2</data>
+</edge>
+<edge source="&quot;GB50073-2013_4.2.1&quot;" target="&quot;洁净区&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"GB50073-2013_4.2.1 法规规定了洁净区的布置要求。"</data>
+  <data key="d5">"法规要求，布置规范"</data>
+  <data key="d6">chunk-f8c803ba33bf15b3c6bd94bebedd2ba2</data>
+</edge>
+<edge source="&quot;GB50073-2013_4.2.1&quot;" target="&quot;传递窗&quot;">
+  <data key="d3">2.0</data>
+  <data key="d4">"GB50073-2013_4.2.1 法规要求宜设有传递窗等防止污染的措施。"</data>
+  <data key="d5">"布置要求，污染控制"</data>
+  <data key="d6">chunk-f8c803ba33bf15b3c6bd94bebedd2ba2</data>
+</edge>
+<edge source="&quot;GB50073-2013_4.2.1&quot;" target="&quot;空气调节机房&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"GB50073-2013_4.2.1 法规要求洁净区靠近空气调节机房。"</data>
+  <data key="d5">"布置要求，空气调节"</data>
+  <data key="d6">chunk-f8c803ba33bf15b3c6bd94bebedd2ba2</data>
+</edge>
+<edge source="&quot;GB50073-2013_4.2.1&quot;" target="&quot;工艺设备&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"GB50073-2013_4.2.1 法规要求易产生污染的工艺设备应布置在靠近回风口位置。"</data>
+  <data key="d5">"布置要求，污染控制"</data>
+  <data key="d6">chunk-f8c803ba33bf15b3c6bd94bebedd2ba2</data>
+</edge>
+<edge source="&quot;GB50073-2013_4.2.1&quot;" target="&quot;工厂&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"GB50073-2013_4.2.1 法规适用于工厂的平面布置。"</data>
+  <data key="d5">"法规适用，工厂布置"</data>
+  <data key="d6">chunk-f8c803ba33bf15b3c6bd94bebedd2ba2</data>
+</edge>
+<edge source="&quot;洁净区&quot;" target="&quot;洁净厂房&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"洁净厂房应设置洁净区以满足高洁净度要求。"</data>
+  <data key="d5">"分区布置，洁净要求"</data>
+  <data key="d6">chunk-b52878e756cf1642722ae75ed7234d39</data>
+</edge>
+<edge source="&quot;人物&quot;" target="&quot;洁净厂房&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"人物负责洁净厂房的技术设施布置和遵守法规GB50073-2013_4.2.4。"</data>
+  <data key="d5">"执行法规，技术实施"</data>
+  <data key="d6">chunk-a270926e16a7a29271ea480ac49d29a9</data>
+</edge>
+<edge source="&quot;人物&quot;" target="&quot;GBZ1-2010_5.2.2.3&quot;">
+  <data key="d3">4.0</data>
+  <data key="d4">"法规的执行或监管可能涉及相关人物。"</data>
+  <data key="d5">"法规执行，人物参与"</data>
+  <data key="d6">chunk-0bfcf325622297ba18e80adac07b2427</data>
+</edge>
+<edge source="&quot;管线布置&quot;" target="&quot;洁净厂房&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"洁净厂房的设计应考虑管线的布置。"</data>
+  <data key="d5">"系统设计，管线布局"</data>
+  <data key="d6">chunk-b52878e756cf1642722ae75ed7234d39</data>
+</edge>
+<edge source="&quot;空气洁净度等级&quot;" target="&quot;洁净厂房&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"洁净厂房的设计需要达到特定的空气洁净度等级。"</data>
+  <data key="d5">"设计标准，洁净度要求"</data>
+  <data key="d6">chunk-b52878e756cf1642722ae75ed7234d39</data>
+</edge>
+<edge source="&quot;GB50073-2013_4.2.2&quot;" target="&quot;洁净厂房&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"GB50073-2013_4.2.2 规定了洁净厂房的设计要求。"</data>
+  <data key="d5">"法规要求，设计规范"</data>
+  <data key="d6">chunk-b52878e756cf1642722ae75ed7234d39</data>
+</edge>
+<edge source="&quot;辅助用房&quot;" target="&quot;洁净厂房&quot;">
+  <data key="d3">3.0</data>
+  <data key="d4">"洁净厂房应设置辅助用房以支持生产活动。"</data>
+  <data key="d5">"辅助设施，生产需求"</data>
+  <data key="d6">chunk-b52878e756cf1642722ae75ed7234d39</data>
+</edge>
+<edge source="&quot;工艺设备安装和维修&quot;" target="&quot;洁净厂房&quot;">
+  <data key="d3">1.0</data>
+  <data key="d4">"洁净厂房的设计应考虑工艺设备的安装和维修。"</data>
+  <data key="d5">"设备管理，设计考虑"</data>
+  <data key="d6">chunk-b52878e756cf1642722ae75ed7234d39</data>
+</edge>
+<edge source="&quot;地理位置&quot;" target="&quot;GBZ1-2010_5.2.2.3&quot;">
+  <data key="d3">3.0</data>
+  <data key="d4">"法规可能适用于特定的地理位置或区域。"</data>
+  <data key="d5">"法规适用，地理位置"</data>
+  <data key="d6">chunk-0bfcf325622297ba18e80adac07b2427</data>
+</edge>
+<edge source="&quot;气流流型&quot;" target="&quot;洁净厂房&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"洁净厂房的设计应考虑气流的流型。"</data>
+  <data key="d5">"气流管理，设计考虑"</data>
+  <data key="d6">chunk-b52878e756cf1642722ae75ed7234d39</data>
+</edge>
+<edge source="&quot;事件&quot;" target="&quot;洁净厂房&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"事件涉及洁净厂房的技术设施布置和法规的执行。"</data>
+  <data key="d5">"法规应用，设施布置"</data>
+  <data key="d6">chunk-a270926e16a7a29271ea480ac49d29a9</data>
+</edge>
+<edge source="&quot;事件&quot;" target="&quot;GBZ1-2010_5.2.2.3&quot;">
+  <data key="d3">2.0</data>
+  <data key="d4">"法规可能针对与法规名称相关的事件或情况。"</data>
+  <data key="d5">"法规针对，事件相关"</data>
+  <data key="d6">chunk-0bfcf325622297ba18e80adac07b2427</data>
+</edge>
+<edge source="&quot;生产操作&quot;" target="&quot;洁净厂房&quot;">
+  <data key="d3">2.0</data>
+  <data key="d4">"洁净厂房的设计应支持生产操作。"</data>
+  <data key="d5">"设计功能，生产活动"</data>
+  <data key="d6">chunk-b52878e756cf1642722ae75ed7234d39</data>
+</edge>
+<edge source="&quot;净化空调系统&quot;" target="&quot;洁净厂房&quot;">
+  <data key="d3">15.0</data>
+  <data key="d4">"净化空调系统的要求在洁净厂房的技术设施布置中被优先考虑。"&lt;SEP&gt;"洁净厂房的设计应包括净化空调系统。"</data>
+  <data key="d5">"系统要求，优先考虑"&lt;SEP&gt;"系统设计，净化需求"</data>
+  <data key="d6">chunk-b52878e756cf1642722ae75ed7234d39&lt;SEP&gt;chunk-a270926e16a7a29271ea480ac49d29a9</data>
+</edge>
+<edge source="&quot;洁净厂房&quot;" target="&quot;生产工艺&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"洁净厂房的设计需要满足生产工艺的要求。"</data>
+  <data key="d5">"设计目的，工艺需求"</data>
+  <data key="d6">chunk-b52878e756cf1642722ae75ed7234d39</data>
+</edge>
+<edge source="&quot;洁净厂房&quot;" target="&quot;人员净化&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"洁净厂房需要采取措施进行人员净化以保持洁净度。"</data>
+  <data key="d5">"人员管理，洁净要求"</data>
+  <data key="d6">chunk-b52878e756cf1642722ae75ed7234d39</data>
+</edge>
+<edge source="&quot;洁净厂房&quot;" target="&quot;物料净化&quot;">
+  <data key="d3">4.0</data>
+  <data key="d4">"洁净厂房需要对物料进行净化处理以防止污染。"</data>
+  <data key="d5">"物料管理，洁净要求"</data>
+  <data key="d6">chunk-b52878e756cf1642722ae75ed7234d39</data>
+</edge>
+<edge source="&quot;洁净厂房&quot;" target="&quot;送风口&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"送风口的布置需符合法规GB50073-2013_4.2.4的要求。"</data>
+  <data key="d5">"设施布置，法规要求"</data>
+  <data key="d6">chunk-a270926e16a7a29271ea480ac49d29a9</data>
+</edge>
+<edge source="&quot;洁净厂房&quot;" target="&quot;回风口&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"回风口的布置需符合法规GB50073-2013_4.2.4的要求。"</data>
+  <data key="d5">"设施布置，法规要求"</data>
+  <data key="d6">chunk-a270926e16a7a29271ea480ac49d29a9</data>
+</edge>
+<edge source="&quot;洁净厂房&quot;" target="&quot;组织&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"组织负责制定和执行洁净厂房的技术设施布置法规。"</data>
+  <data key="d5">"法规执行，管理责任"</data>
+  <data key="d6">chunk-a270926e16a7a29271ea480ac49d29a9</data>
+</edge>
+<edge source="&quot;洁净厂房&quot;" target="&quot;GB50073-2013_4.2.4&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"法规GB50073-2013_4.2.4规定了洁净厂房的技术设施布置要求。"</data>
+  <data key="d5">"法规约束，技术设施"</data>
+  <data key="d6">chunk-a270926e16a7a29271ea480ac49d29a9</data>
+</edge>
+<edge source="&quot;洁净厂房&quot;" target="&quot;照明器&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"照明器的布置需符合法规GB50073-2013_4.2.4的要求。"</data>
+  <data key="d5">"设施布置，法规要求"</data>
+  <data key="d6">chunk-a270926e16a7a29271ea480ac49d29a9</data>
+</edge>
+<edge source="&quot;洁净厂房&quot;" target="&quot;管线&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"管线的布置需符合法规GB50073-2013_4.2.4的要求。"</data>
+  <data key="d5">"设施布置，法规要求"</data>
+  <data key="d6">chunk-a270926e16a7a29271ea480ac49d29a9</data>
+</edge>
+<edge source="&quot;组织&quot;" target="&quot;GBZ1-2010_5.2.2.3&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"法规的制定或管理可能涉及相关组织。"</data>
+  <data key="d5">"法规制定，组织参与"</data>
+  <data key="d6">chunk-0bfcf325622297ba18e80adac07b2427</data>
+</edge>
+<edge source="&quot;技术经济条件&quot;" target="&quot;GBZ_T194-2007_4.1.4&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"GBZ_T194-2007_4.1.4 法规要求工业企业厂区总平面布置考虑技术经济条件。"</data>
+  <data key="d5">"法规要求，技术经济条件"</data>
+  <data key="d6">chunk-687a5369e1f7e2fc3d7b4ff072635e75</data>
+</edge>
+<edge source="&quot;辅助生产区&quot;" target="&quot;工业企业&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"工业企业需要按照 GBZ_T194-2007_4.1.4 法规要求明确辅助生产区的布局。"</data>
+  <data key="d5">"布局要求，功能分区"</data>
+  <data key="d6">chunk-687a5369e1f7e2fc3d7b4ff072635e75</data>
+</edge>
+<edge source="&quot;辅助生产区&quot;" target="&quot;GBZ1-2010_5.2.1.4&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"GBZ1-2010_5.2.1.4法规要求辅助生产区布置在生产区和非生产区之间。"&lt;SEP&gt;"GBZ1-2010_5.2.1.4法规要求辅助生产区应布置在生产区和非生产区之间。"</data>
+  <data key="d5">"法规要求，区域布置"&lt;SEP&gt;"法规要求，环境布置"</data>
+  <data key="d6">chunk-e97ad6248aed92648e14ccd00caa82e5</data>
+</edge>
+<edge source="&quot;生产区&quot;" target="&quot;工业企业&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"工业企业需要按照 GBZ_T194-2007_4.1.4 法规要求明确生产区的布局。"</data>
+  <data key="d5">"布局要求，功能分区"</data>
+  <data key="d6">chunk-687a5369e1f7e2fc3d7b4ff072635e75</data>
+</edge>
+<edge source="&quot;生产区&quot;" target="&quot;GBZ1-2010_5.2.1.4&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"GBZ1-2010_5.2.1.4法规要求生产区应布置在上风侧。"</data>
+  <data key="d5">"法规要求，环境布置"</data>
+  <data key="d6">chunk-e97ad6248aed92648e14ccd00caa82e5</data>
+</edge>
+<edge source="&quot;卫生要求&quot;" target="&quot;GBZ_T194-2007_4.1.4&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"GBZ_T194-2007_4.1.4 法规要求工业企业厂区总平面布置符合卫生要求。"</data>
+  <data key="d5">"法规要求，卫生条件"</data>
+  <data key="d6">chunk-687a5369e1f7e2fc3d7b4ff072635e75</data>
+</edge>
+<edge source="&quot;场地自然条件&quot;" target="&quot;GBZ_T194-2007_4.1.4&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"GBZ_T194-2007_4.1.4 法规要求工业企业厂区总平面布置考虑场地自然条件。"</data>
+  <data key="d5">"法规要求，自然条件"</data>
+  <data key="d6">chunk-687a5369e1f7e2fc3d7b4ff072635e75</data>
+</edge>
+<edge source="&quot;非生产区&quot;" target="&quot;工业企业&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"工业企业需要按照 GBZ_T194-2007_4.1.4 法规要求明确非生产区的布局。"</data>
+  <data key="d5">"布局要求，功能分区"</data>
+  <data key="d6">chunk-687a5369e1f7e2fc3d7b4ff072635e75</data>
+</edge>
+<edge source="&quot;非生产区&quot;" target="&quot;GBZ1-2010_5.2.1.4&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"GBZ1-2010_5.2.1.4法规要求非生产区应布置在下风侧。"</data>
+  <data key="d5">"法规要求，环境布置"</data>
+  <data key="d6">chunk-e97ad6248aed92648e14ccd00caa82e5</data>
+</edge>
+<edge source="&quot;工业企业&quot;" target="&quot;工程用地&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"工程用地的布局需要考虑工业企业的性质、规模等因素，符合 GBZ_T194-2007_4.1.4 法规的要求。"</data>
+  <data key="d5">"用地布局，法规要求"</data>
+  <data key="d6">chunk-687a5369e1f7e2fc3d7b4ff072635e75</data>
+</edge>
+<edge source="&quot;工业企业&quot;" target="&quot;GBZ_T194-2007_4.1.4&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"GBZ_T194-2007_4.1.4 法规对工业企业厂区总平面布置有具体要求。"</data>
+  <data key="d5">"法规要求，组织规范"</data>
+  <data key="d6">chunk-687a5369e1f7e2fc3d7b4ff072635e75</data>
+</edge>
+<edge source="&quot;工业企业&quot;" target="&quot;GB 50187&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"工业企业总平面布置需要遵守GB 50187国家相关标准。"</data>
+  <data key="d5">"法规遵循，设计标准"</data>
+  <data key="d6">chunk-48cd3127f3af386fb5c44be090c7c520</data>
+</edge>
+<edge source="&quot;工业企业&quot;" target="&quot;厂区总平面功能分区原则&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"工业企业应遵循厂区总平面功能分区原则"</data>
+  <data key="d5">"遵循原则"</data>
+  <data key="d6">chunk-e4cbf8d982dfa09d4cac9023961646c8</data>
+</edge>
+<edge source="&quot;工业企业&quot;" target="&quot;职业性有害因素&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"工业企业需要远离产生职业性有害因素的设施，以保护员工健康。"</data>
+  <data key="d5">"健康保护，设施布局"</data>
+  <data key="d6">chunk-61c1c9ac7685b82103974501853ee5c1</data>
+</edge>
+<edge source="&quot;生产流程&quot;" target="&quot;GBZ_T194-2007_4.1.4&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"GBZ_T194-2007_4.1.4 法规要求工业企业厂区总平面布置考虑生产流程。"</data>
+  <data key="d5">"法规要求，生产流程"</data>
+  <data key="d6">chunk-687a5369e1f7e2fc3d7b4ff072635e75</data>
+</edge>
+<edge source="&quot;交通运输&quot;" target="&quot;GBZ_T194-2007_4.1.4&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"GBZ_T194-2007_4.1.4 法规要求工业企业厂区总平面布置考虑交通运输。"</data>
+  <data key="d5">"法规要求，交通运输"</data>
+  <data key="d6">chunk-687a5369e1f7e2fc3d7b4ff072635e75</data>
+</edge>
+<edge source="&quot;GBZ_T194-2007_4.1.4&quot;" target="&quot;规模&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"GBZ_T194-2007_4.1.4 法规要求工业企业厂区总平面布置考虑企业的规模。"</data>
+  <data key="d5">"法规要求，企业规模"</data>
+  <data key="d6">chunk-687a5369e1f7e2fc3d7b4ff072635e75</data>
+</edge>
+<edge source="&quot;GBZ_T194-2007_4.1.4&quot;" target="&quot;性质&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"GBZ_T194-2007_4.1.4 法规要求工业企业厂区总平面布置考虑企业的性质。"</data>
+  <data key="d5">"法规要求，企业特性"</data>
+  <data key="d6">chunk-687a5369e1f7e2fc3d7b4ff072635e75</data>
+</edge>
+<edge source="&quot;GBZ_T194-2007_4.1.4&quot;" target="&quot;消防车回转场地&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"GBZ_T194-2007_4.1.4 规定了消防车回转场地的设置要求。"</data>
+  <data key="d5">"法规内容，消防车回转场地"</data>
+  <data key="d6">chunk-366f72aaad4e8d022c078324aa915bdf</data>
+</edge>
+<edge source="&quot;GBZ_T194-2007_4.1.4&quot;" target="&quot;厂区道路布置&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"GBZ_T194-2007_4.1.4 规定了厂区道路布置的具体要求。"</data>
+  <data key="d5">"法规内容，道路布置"</data>
+  <data key="d6">chunk-366f72aaad4e8d022c078324aa915bdf</data>
+</edge>
+<edge source="&quot;GBZ_T194-2007_4.1.4&quot;" target="&quot;国家现行防火规范&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"GBZ_T194-2007_4.1.4 规定厂区道路布置应符合国家现行防火规范。"</data>
+  <data key="d5">"法规依据，消防安全"</data>
+  <data key="d6">chunk-366f72aaad4e8d022c078324aa915bdf</data>
+</edge>
+<edge source="&quot;GBZ_T194-2007_4.1.4&quot;" target="&quot;有毒有害物质工作场所&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"GBZ_T194-2007_4.1.4 规定了有毒有害物质工作场所通道的宽度要求。"</data>
+  <data key="d5">"法规内容，工作场所通道"</data>
+  <data key="d6">chunk-366f72aaad4e8d022c078324aa915bdf</data>
+</edge>
+<edge source="&quot;卫生防护&quot;" target="&quot;工业企业总平面布置&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"工业企业总平面布置中包含卫生防护措施。"</data>
+  <data key="d5">"布局包含，安全措施"</data>
+  <data key="d6">chunk-48cd3127f3af386fb5c44be090c7c520</data>
+</edge>
+<edge source="&quot;工业企业总平面布置&quot;" target="&quot;GB 50187&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"工业企业总平面布置应符合 GB 50187 国家相关标准。"</data>
+  <data key="d5">"标准应用，设计要求"</data>
+  <data key="d6">chunk-48cd3127f3af386fb5c44be090c7c520</data>
+</edge>
+<edge source="&quot;工业企业总平面布置&quot;" target="&quot;建筑物&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"工业企业总平面布置中包含建筑物布局。"</data>
+  <data key="d5">"布局包含，设计要素"</data>
+  <data key="d6">chunk-48cd3127f3af386fb5c44be090c7c520</data>
+</edge>
+<edge source="&quot;工业企业总平面布置&quot;" target="&quot;道路&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"工业企业总平面布置中包含道路布局。"</data>
+  <data key="d5">"布局包含，交通设计"</data>
+  <data key="d6">chunk-48cd3127f3af386fb5c44be090c7c520</data>
+</edge>
+<edge source="&quot;工业企业总平面布置&quot;" target="&quot;绿化&quot;">
+  <data key="d3">4.0</data>
+  <data key="d4">"工业企业总平面布置中包含绿化设计。"</data>
+  <data key="d5">"布局包含，环境美化"</data>
+  <data key="d6">chunk-48cd3127f3af386fb5c44be090c7c520</data>
+</edge>
+<edge source="&quot;道路&quot;" target="&quot;乙类液体&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"乙类液体的储存区域周围的道路需要满足特定的安全要求。"</data>
+  <data key="d5">"交通安全，设计规范"</data>
+  <data key="d6">chunk-d39a9ce0e068d4037af376c3a1821281</data>
+</edge>
+<edge source="&quot;道路&quot;" target="&quot;甲类液体&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"甲类液体的储存区域周围的道路需要满足特定的安全要求。"</data>
+  <data key="d5">"交通安全，设计规范"</data>
+  <data key="d6">chunk-d39a9ce0e068d4037af376c3a1821281</data>
+</edge>
+<edge source="&quot;GBZ1-2010_5.2.1.2&quot;" target="&quot;GB 50187&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"GBZ1-2010_5.2.1.2 法规要求符合 GB 50187 国家相关标准。"</data>
+  <data key="d5">"法规遵循，标准要求"</data>
+  <data key="d6">chunk-48cd3127f3af386fb5c44be090c7c520</data>
+</edge>
+<edge source="&quot;有害物质&quot;" target="&quot;厂区总平面功能分区原则&quot;">
+  <data key="d3">2.0</data>
+  <data key="d4">"产生有害物质的建筑应有适当的间距或分隔"</data>
+  <data key="d5">"分区要求"</data>
+  <data key="d6">chunk-e4cbf8d982dfa09d4cac9023961646c8</data>
+</edge>
+<edge source="&quot;有害物质&quot;" target="&quot;GBZ1-2010_5.2.1.4&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"GBZ1-2010_5.2.1.4法规要求有害物质散发车间应布置在上风侧。"</data>
+  <data key="d5">"法规要求，环境布置"</data>
+  <data key="d6">chunk-e97ad6248aed92648e14ccd00caa82e5</data>
+</edge>
+<edge source="&quot;分期建设项目&quot;" target="&quot;厂区总平面功能分区原则&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"分期建设项目需要整体规划以遵循厂区总平面功能分区原则"</data>
+  <data key="d5">"规划原则"</data>
+  <data key="d6">chunk-e4cbf8d982dfa09d4cac9023961646c8</data>
+</edge>
+<edge source="&quot;单体建筑&quot;" target="&quot;厂区总平面功能分区原则&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"单体建筑应在功能区内有序合理布置"</data>
+  <data key="d5">"布局原则"</data>
+  <data key="d6">chunk-e4cbf8d982dfa09d4cac9023961646c8</data>
+</edge>
+<edge source="&quot;厂区总平面功能分区原则&quot;" target="&quot;辅助用室&quot;">
+  <data key="d3">3.0</data>
+  <data key="d4">"辅助用室应布置在生产区内"</data>
+  <data key="d5">"分区要求"</data>
+  <data key="d6">chunk-e4cbf8d982dfa09d4cac9023961646c8</data>
+</edge>
+<edge source="&quot;厂区总平面功能分区原则&quot;" target="&quot;行政办公用房&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"行政办公用房应设置在非生产区"</data>
+  <data key="d5">"分区要求"</data>
+  <data key="d6">chunk-e4cbf8d982dfa09d4cac9023961646c8</data>
+</edge>
+<edge source="&quot;厂区总平面功能分区原则&quot;" target="&quot;环境质量&quot;">
+  <data key="d3">1.0</data>
+  <data key="d4">"环境质量要求较高的建筑应有适当的间距或分隔"</data>
+  <data key="d5">"分区要求"</data>
+  <data key="d6">chunk-e4cbf8d982dfa09d4cac9023961646c8</data>
+</edge>
+<edge source="&quot;厂区总平面功能分区原则&quot;" target="&quot;生产车间&quot;">
+  <data key="d3">4.0</data>
+  <data key="d4">"生产车间应布置在生产区内"</data>
+  <data key="d5">"分区要求"</data>
+  <data key="d6">chunk-e4cbf8d982dfa09d4cac9023961646c8</data>
+</edge>
+<edge source="&quot;GBZ1-2010_5.2.1.3&quot;" target="&quot;法规&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"规定了工业企业厂区总平面功能分区原则"</data>
+  <data key="d5">"法规要求"</data>
+  <data key="d6">chunk-e4cbf8d982dfa09d4cac9023961646c8</data>
+</edge>
+<edge source="&quot;辅助用室&quot;" target="&quot;管道&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"辅助用室与管道的位置关系，管道不宜从辅助用室通过。"</data>
+  <data key="d5">"位置关系，法规限制"</data>
+  <data key="d6">chunk-0bfcf325622297ba18e80adac07b2427</data>
+</edge>
+<edge source="&quot;法规&quot;" target="&quot;GBZ1-2010_5.2.1.5&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"法规要求工业企业的总平面布置应当合理规划，将可能产生严重职业性有害因素的设施远离其他设施。"</data>
+  <data key="d5">"法规要求，布局规划"</data>
+  <data key="d6">chunk-61c1c9ac7685b82103974501853ee5c1</data>
+</edge>
+<edge source="&quot;车间&quot;" target="&quot;GBZ1-2010_5.2.1.4&quot;">
+  <data key="d3">2.0</data>
+  <data key="d4">"GBZ1-2010_5.2.1.4法规要求车间按照风向进行布置。"</data>
+  <data key="d5">"法规要求，车间布置"</data>
+  <data key="d6">chunk-e97ad6248aed92648e14ccd00caa82e5</data>
+</edge>
+<edge source="&quot;车间&quot;" target="&quot;职业性有害因素&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"车间内可能存在职业性有害因素，因此需要分开布局。"</data>
+  <data key="d5">"安全布局，有害因素控制"</data>
+  <data key="d6">chunk-61c1c9ac7685b82103974501853ee5c1</data>
+</edge>
+<edge source="&quot;大气污染物&quot;" target="&quot;GBZ1-2010_5.2.1.4&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"GBZ1-2010_5.2.1.4法规中提到了大气污染物扩散条件。"</data>
+  <data key="d5">"法规内容，污染物扩散"</data>
+  <data key="d6">chunk-e97ad6248aed92648e14ccd00caa82e5</data>
+</edge>
+<edge source="&quot;下风侧&quot;" target="&quot;GBZ1-2010_5.2.1.4&quot;">
+  <data key="d3">4.0</data>
+  <data key="d4">"GBZ1-2010_5.2.1.4法规要求将非生产区布置在下风侧。"</data>
+  <data key="d5">"法规要求，风向布置"</data>
+  <data key="d6">chunk-e97ad6248aed92648e14ccd00caa82e5</data>
+</edge>
+<edge source="&quot;GBZ1-2010_5.2.1.4&quot;" target="&quot;相邻车间&quot;">
+  <data key="d3">1.0</data>
+  <data key="d4">"GBZ1-2010_5.2.1.4法规要求相邻车间也要按照风向进行布置。"</data>
+  <data key="d5">"法规要求，相邻车间布置"</data>
+  <data key="d6">chunk-e97ad6248aed92648e14ccd00caa82e5</data>
+</edge>
+<edge source="&quot;GBZ1-2010_5.2.1.4&quot;" target="&quot;GBZ1&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"GBZ1组织制定并发布了GBZ1-2010_5.2.1.4法规。"</data>
+  <data key="d5">"法规制定，组织责任"</data>
+  <data key="d6">chunk-e97ad6248aed92648e14ccd00caa82e5</data>
+</edge>
+<edge source="&quot;GBZ1-2010_5.2.1.4&quot;" target="&quot;全年最小频率风向&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"GBZ1-2010_5.2.1.4法规要求根据全年最小频率风向进行布置。"</data>
+  <data key="d5">"法规要求，风向条件"</data>
+  <data key="d6">chunk-e97ad6248aed92648e14ccd00caa82e5</data>
+</edge>
+<edge source="&quot;生活区&quot;" target="&quot;职业性有害因素&quot;">
+  <data key="d3">4.0</data>
+  <data key="d4">"生活区应远离产生职业性有害因素的车间，以保障居民健康。"</data>
+  <data key="d5">"居住安全，有害因素隔离"</data>
+  <data key="d6">chunk-61c1c9ac7685b82103974501853ee5c1</data>
+</edge>
+<edge source="&quot;卫生防护绿化带&quot;" target="&quot;职业性有害因素&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"卫生防护绿化带用于减少职业性有害因素对车间和其他区域的影响。"</data>
+  <data key="d5">"环境保护，健康防护"</data>
+  <data key="d6">chunk-61c1c9ac7685b82103974501853ee5c1</data>
+</edge>
+<edge source="&quot;夹角&quot;" target="&quot;条件限制&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"在条件限制的情况下，高温车间纵轴与当地夏季主导风向的夹角不得小于45°。"</data>
+  <data key="d5">"限制条件，角度限制"</data>
+  <data key="d6">chunk-2da62a367a4af653552b4e1964362c8c</data>
+</edge>
+<edge source="&quot;当地夏季主导风向&quot;" target="&quot;高温车间&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"高温车间纵轴应与当地夏季主导风向相垂直，以确保通风效果和安全性。"</data>
+  <data key="d5">"通风要求，风向适应"</data>
+  <data key="d6">chunk-2da62a367a4af653552b4e1964362c8c</data>
+</edge>
+<edge source="&quot;GBZ1-2010_5.2.1.8&quot;" target="&quot;法规要求&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"GBZ1-2010_5.2.1.8 明确了高温车间纵轴与风向的具体要求，这是法规的核心内容。"</data>
+  <data key="d5">"法规核心，要求明确"</data>
+  <data key="d6">chunk-2da62a367a4af653552b4e1964362c8c</data>
+</edge>
+<edge source="&quot;GBZ1-2010_5.2.2.1&quot;" target="&quot;厂房&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"GBZ1-2010_5.2.2.1 规定了厂房的建筑要求，特别是关于放散热和有害气体排放的处理。"</data>
+  <data key="d5">"法规要求，建筑规范"</data>
+  <data key="d6">chunk-117d80d9e473bdc0697b332828ac4e57</data>
+</edge>
+<edge source="&quot;多层厂房&quot;" target="&quot;GBZ1-2010_5.2.2.2&quot;">
+  <data key="d3">12.0</data>
+  <data key="d4">"法规要求在多层厂房安装生产设备时采取隔声和减振措施。"</data>
+  <data key="d5">"措施要求，多层厂房安装"</data>
+  <data key="d6">chunk-29e9826fcd7b2d17c04863bb34002304</data>
+</edge>
+<edge source="&quot;噪声与振动&quot;" target="&quot;GBZ1-2010_5.2.2.2&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"法规GBZ1-2010_5.2.2.2规定了噪声与振动较大的生产设备应采取的安装措施。"</data>
+  <data key="d5">"法规规范，设备属性"</data>
+  <data key="d6">chunk-29e9826fcd7b2d17c04863bb34002304</data>
+</edge>
+<edge source="&quot;GBZ1-2010_5.2.2.2&quot;" target="&quot;生产设备&quot;">
+  <data key="d3">16.0</data>
+  <data key="d4">"法规规定了生产设备的安装位置和措施。"</data>
+  <data key="d5">"法规规范，设备安装"</data>
+  <data key="d6">chunk-29e9826fcd7b2d17c04863bb34002304</data>
+</edge>
+<edge source="&quot;GBZ1-2010_5.2.2.2&quot;" target="&quot;单层厂房&quot;">
+  <data key="d3">14.0</data>
+  <data key="d4">"法规规定了单层厂房作为生产设备安装位置的适宜性。"</data>
+  <data key="d5">"位置适宜性，法规要求"</data>
+  <data key="d6">chunk-29e9826fcd7b2d17c04863bb34002304</data>
+</edge>
+<edge source="&quot;GBZ1-2010_5.2.2.2&quot;" target="&quot;有效的隔声和减振措施&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"法规GBZ1-2010_5.2.2.2要求在多层厂房安装时采取有效的隔声和减振措施。"</data>
+  <data key="d5">"措施要求，法规规定"</data>
+  <data key="d6">chunk-29e9826fcd7b2d17c04863bb34002304</data>
+</edge>
+<edge source="&quot;GBZ1-2010_5.2.2.3&quot;" target="&quot;管道&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"GBZ1-2010_5.2.2.3法规对管道的使用提出了要求。"</data>
+  <data key="d5">"法规要求，管道安全"</data>
+  <data key="d6">chunk-0bfcf325622297ba18e80adac07b2427</data>
+</edge>
+<edge source="&quot;蒸汽&quot;" target="&quot;管道&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"管道用于输送蒸汽，法规要求对管道采取特殊措施。"</data>
+  <data key="d5">"气体输送，安全措施"</data>
+  <data key="d6">chunk-0bfcf325622297ba18e80adac07b2427</data>
+</edge>
+<edge source="&quot;挥发性气体&quot;" target="&quot;管道&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"管道用于输送挥发性气体，法规要求对管道采取特殊措施。"</data>
+  <data key="d5">"气体输送，安全措施"</data>
+  <data key="d6">chunk-0bfcf325622297ba18e80adac07b2427</data>
+</edge>
+<edge source="&quot;仪表控制室&quot;" target="&quot;管道&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"仪表控制室与管道的位置关系，管道不宜从仪表控制室通过。"</data>
+  <data key="d5">"位置关系，法规限制"</data>
+  <data key="d6">chunk-0bfcf325622297ba18e80adac07b2427</data>
+</edge>
+<edge source="&quot;通道&quot;" target="&quot;厂区道路布置&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"厂区道路布置时，通道的宽度需要满足法规要求。"</data>
+  <data key="d5">"道路设计，法规要求"</data>
+  <data key="d6">chunk-366f72aaad4e8d022c078324aa915bdf</data>
+</edge>
+<edge source="&quot;厂区&quot;" target="&quot;有毒有害物质工作场所&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"厂区内可能存在有毒有害物质的工作场所，需要采取特殊的安全措施。"</data>
+  <data key="d5">"工作环境，安全措施"</data>
+  <data key="d6">chunk-366f72aaad4e8d022c078324aa915bdf</data>
+</edge>
+<edge source="&quot;厂区&quot;" target="&quot;厂区道路布置&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"厂区内的道路布置是厂区管理的一部分，需要符合法规要求。"</data>
+  <data key="d5">"区域管理，道路布置"</data>
+  <data key="d6">chunk-366f72aaad4e8d022c078324aa915bdf</data>
+</edge>
+<edge source="&quot;厂区&quot;" target="&quot;消防车回转场地&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"厂区内需要设置消防车回转场地以确保消防车辆在紧急情况下的操作。"</data>
+  <data key="d5">"安全措施，消防设施"</data>
+  <data key="d6">chunk-366f72aaad4e8d022c078324aa915bdf</data>
+</edge>
+<edge source="&quot;有毒有害物质工作场所&quot;" target="&quot;宽度&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"有毒有害物质工作场所的通道宽度需要满足法规规定的最小宽度。"</data>
+  <data key="d5">"工作场所设计，法规要求"</data>
+  <data key="d6">chunk-366f72aaad4e8d022c078324aa915bdf</data>
+</edge>
+<edge source="&quot;宽度&quot;" target="&quot;消防车回转场地&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"消防车回转场地的宽度需要足够大，以便消防车辆可以顺利回转。"</data>
+  <data key="d5">"设施设计，尺寸要求"</data>
+  <data key="d6">chunk-366f72aaad4e8d022c078324aa915bdf</data>
+</edge>
+<edge source="&quot;HG20571-2014_3.2.9&quot;" target="&quot;建筑设计防火规范&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"HG20571-2014_3.2.9法规要求遵循建筑设计防火规范GB50016的规定。"</data>
+  <data key="d5">"法规遵循标准"</data>
+  <data key="d6">chunk-d39a9ce0e068d4037af376c3a1821281</data>
+</edge>
+<edge source="&quot;HG20571-2014_3.2.9&quot;" target="&quot;石油化工企业设计防火规范&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"HG20571-2014_3.2.9法规要求遵循石油化工企业设计防火规范GB50160的规定。"</data>
+  <data key="d5">"法规遵循标准"</data>
+  <data key="d6">chunk-d39a9ce0e068d4037af376c3a1821281</data>
+</edge>
+<edge source="&quot;储存量&quot;" target="&quot;乙类液体&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"乙类液体的储存量需要符合法规规定的最大储存量。"</data>
+  <data key="d5">"储存限制，安全规范"</data>
+  <data key="d6">chunk-d39a9ce0e068d4037af376c3a1821281</data>
+</edge>
+<edge source="&quot;储存量&quot;" target="&quot;甲类液体&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"甲类液体的储存量需要符合法规规定的最大储存量。"</data>
+  <data key="d5">"储存限制，安全规范"</data>
+  <data key="d6">chunk-d39a9ce0e068d4037af376c3a1821281</data>
+</edge>
+<edge source="&quot;乙类液体&quot;" target="&quot;防火间距&quot;">
+  <data key="d3">4.0</data>
+  <data key="d4">"乙类液体的储存需要遵守法规规定的最小防火间距。"</data>
+  <data key="d5">"安全距离，防火规范"</data>
+  <data key="d6">chunk-d39a9ce0e068d4037af376c3a1821281</data>
+</edge>
+<edge source="&quot;乙类液体&quot;" target="&quot;安全疏散&quot;">
+  <data key="d3">11.0</data>
+  <data key="d4">"乙类液体的储存区域需要配备有效的安全疏散设施。"</data>
+  <data key="d5">"疏散要求，安全规范"</data>
+  <data key="d6">chunk-d39a9ce0e068d4037af376c3a1821281</data>
+</edge>
+<edge source="&quot;安全疏散&quot;" target="&quot;甲类液体&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"甲类液体的储存区域需要配备有效的安全疏散设施。"</data>
+  <data key="d5">"疏散要求，安全规范"</data>
+  <data key="d6">chunk-d39a9ce0e068d4037af376c3a1821281</data>
+</edge>
+<edge source="&quot;防火间距&quot;" target="&quot;甲类液体&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"甲类液体的储存需要遵守法规规定的最小防火间距。"</data>
+  <data key="d5">"安全距离，防火规范"</data>
+  <data key="d6">chunk-d39a9ce0e068d4037af376c3a1821281</data>
+</edge>
+</graph></graphml>
