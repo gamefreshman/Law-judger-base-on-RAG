@@ -66,8 +66,12 @@ rag = LightRAG(
 
 # Perform naive search
 
-content = "厂区生产厂房设置有环形通道，运输、消防等车辆可直达车间各出入口。厂区内设置环形道路，宽约 $5\mathrm{m}$ ，转弯半径约 $6\mathrm{m}$ ，厂区尽端式道路应有足够的消防车回转场地。厂区北侧中部设置有一个出入口作为货运、人流出入口。告诉我以上内容要使用那哪些法规去进行评估"
+file_path = r"C:\Users\23757\Desktop\大创相关文档\code_rebuild\PROJECT\Law-judger-base-on-RAG\knowledge_base"
 
+for file in os.listdir(file_path):
+    with open(os.path.join(file_path, file), "r", encoding="utf-8") as f:
+        content = f.read() + "告诉我以上内容要使用那哪些法规去进行评估"
+        
 # print(
 #     rag.query(content, param=QueryParam(mode="naive"))
 # )

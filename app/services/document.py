@@ -6,7 +6,66 @@ from config.config import DIFY_CONFIG, FILE_CONFIG
 from ..utils.logger import logger
 from .workflow import WorkflowService
 
+# import jieba
+# import xml.etree.ElementTree as ET
+
 import subprocess
+
+# class Graph:
+#     def __init__(self):
+#         self.nodes = {}  # 存储节点信息
+#         self.edges = []  # 存储边信息
+
+#     def add_node(self, node_id, attributes):
+#         self.nodes[node_id] = attributes
+
+#     def add_edge(self, source, target, attributes):
+#         self.edges.append((source, target, attributes))
+
+#     def has_node(self, node_id):
+#         return node_id in self.nodes
+
+#     def has_edge(self, source, target):
+#         return any(edge[0] == source and edge[1] == target for edge in self.edges)
+
+#     def get_connected_regulations(self, node_id):
+#         connected_regulations = []
+#         for edge in self.edges:
+#             if edge[0] == node_id or edge[1] == node_id:
+#                 connected_regulations.append(edge)
+#         return connected_regulations
+
+# def load_graph(graphml_file):
+#     graph = Graph()
+#     tree = ET.parse(graphml_file)
+#     root = tree.getroot()
+
+#     # 解析节点
+#     for node in root.findall('.//{http://graphml.graphdrawing.org/xmlns}node'):
+#         node_id = node.get('id')
+#         attributes = {}
+#         for data in node.findall('{http://graphml.graphdrawing.org/xmlns}data'):
+#             key = data.get('key')
+#             value = data.text
+#             attributes[key] = value
+#         graph.add_node(node_id, attributes)
+
+#     # 解析边
+#     for edge in root.findall('.//{http://graphml.graphdrawing.org/xmlns}edge'):
+#         source = edge.get('source')
+#         target = edge.get('target')
+#         attributes = {}
+#         for data in edge.findall('{http://graphml.graphdrawing.org/xmlns}data'):
+#             key = data.get('key')
+#             value = data.text
+#             attributes[key] = value
+#         graph.add_edge(source, target, attributes)
+
+#     return graph
+
+# def tokenize(text):
+    # 使用jieba进行分词
+    # return list(jieba.cut(text))
 
 class DocumentService:
     def __init__(self):
@@ -102,6 +161,26 @@ class DocumentService:
             logger.error(f"错误堆栈: \n{traceback.format_exc()}")
             raise
     
+    # def get_judge_laws(self):
+    #     """获取法规评估列表"""
+    # async def process_user_document(file_path, graph):
+    #     # 读取用户上传的文档
+    #     with open(file_path, 'r', encoding='utf-8') as file:
+    #         document_content = file.read()
+
+    #     # 分词处理
+    #     tokens = tokenize(document_content)
+
+    #     # 正则化匹配
+    #     matched_regulations = []
+    #     for token in tokens:
+    #         # 在图中查找匹配的节点或边
+    #         if graph.has_node(token) or graph.has_edge(token):
+    #             connected_regulations = get_connected_regulations(token, graph)
+    #             matched_regulations.extend(connected_regulations)
+
+    #     return matched_regulations
+
     async def upload_document(self, file_info):
         """上传文档到Dify并进行法规评估"""
         try:

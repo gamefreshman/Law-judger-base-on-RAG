@@ -1,7 +1,7 @@
 import zhipuai
 import requests
 import json
-from config.config import ZHIPU_CONFIG, DIFY_CONFIG, RETRIEVAL_CONFIG
+from config.config import ZHIPU_CONFIG, DIFY_CONFIG
 from ..utils.logger import logger
 
 class ChatService:
@@ -36,11 +36,14 @@ class ChatService:
             }
         }
         
-    async def search_knowledge_base(self, query):
+    async def search_knowledge_base(self, query, is_user_doc=True, top_k=5):
         """从Dify知识库中检索相关内容"""
         try:
             # 1. 使用简单的检索请求
-            retrieve_url = f"{DIFY_CONFIG['base_url']}/datasets/{DIFY_CONFIG['dataset_id']}/retrieve"
+            if is_user_doc:
+                retrieve_url = f"{DIFY_CONFIG['base_url']}/datasets/{DIFY_CONFIG['dataset_id']}/retrieve"
+            else:
+                retrieve_url = f"{DIFY_CONFIG['base_url']}/datasets/c5faedd0-3a1b-440b-80d5-fd7b27410acb/retrieve"
             headers = {
                 'Authorization': f'Bearer {DIFY_CONFIG["api_key"]}',
                 'Content-Type': 'application/json'
@@ -49,7 +52,7 @@ class ChatService:
             
             retrieve_data = {
                 "query": query,
-                "top_k": 3
+                "top_k": top_k
             }
             
             logger.info(f"发送检索请求: URL={retrieve_url}")
@@ -83,17 +86,22 @@ class ChatService:
     async def retrieve_knowledge(self, query):
         """使用GLM-4进行知识库问答"""
         try:
-            # 1. 检索知识库
+            # 1. 检索知识库: 用户文档和QA库
             logger.info(f"开始检索知识库，查询：{query}")
-            knowledge_content = await self.search_knowledge_base(query)
-            logger.info(f"知识库检索结果：{knowledge_content}")
+            knowledge_content_user_doc = await self.search_knowledge_base(query, True, 5)
+            knowledge_content_qa_doc = await self.search_knowledge_base(query, False, 5)
+
+            logger.info(f"知识库检索结果：{knowledge_content_user_doc + knowledge_content_qa_doc}")
             
             # 2. 构建系统提示语
             system_prompt = """
             你是一个基于工业文档知识库的问答助手。你需要根据知识库检索内容，首先思考分析当前我的问题（{query_content}）是否有歧义或者答案需求不清晰，缺乏限制条件。如果我的当前提问有明确歧义或者从知识库检索内容中查找不到准确答案，你需要生成一个阐明性问题去向我提问，得到我明确反馈后再进行回答交互。如果我当前提问并没有显著歧义，在检索内容中能找到对应答案，请你直接回答即可。
 
-            根据问题，知识库检索结果如下：
-            {knowledge_base_content}
+            根据问题，从用户文档检索结果如下：
+            {knowledge_base_content_user}
+
+            根据问题，从QA库检索结果如下：
+            {knowledge_base_content_qa}
 
             请基于以上检索内容，先输出你的歧义判断过程。如果你判断有歧义，请提出简单的阐明性问题去消除歧义。如果你判断没有歧义，请给出完整的回答。
 
@@ -101,7 +109,10 @@ class ChatService:
             """
             
             # 3. 构建对话历史
-            messages = [{"role": "system", "content": system_prompt.format(query_content=query, knowledge_base_content=knowledge_content)}]
+            messages = [{"role": "system", "content": system_prompt.format(
+                query_content=query, 
+                knowledge_base_content_user=knowledge_content_user_doc,
+                knowledge_base_content_qa=knowledge_content_qa_doc)}]
             messages.extend(self.chat_history)
             messages.append({"role": "user", "content": query})
             
@@ -174,7 +185,7 @@ class ChatService:
                     # }
                 },
                 'chat_history': self.chat_history,
-                'knowledge_base_content': knowledge_content
+                'knowledge_base_content': knowledge_content_user_doc + knowledge_content_qa_doc
             }
             
             logger.info(f"构建的响应数据：{response_data}")
