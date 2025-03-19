@@ -11,62 +11,6 @@ from .workflow import WorkflowService
 
 import subprocess
 
-# class Graph:
-#     def __init__(self):
-#         self.nodes = {}  # 存储节点信息
-#         self.edges = []  # 存储边信息
-
-#     def add_node(self, node_id, attributes):
-#         self.nodes[node_id] = attributes
-
-#     def add_edge(self, source, target, attributes):
-#         self.edges.append((source, target, attributes))
-
-#     def has_node(self, node_id):
-#         return node_id in self.nodes
-
-#     def has_edge(self, source, target):
-#         return any(edge[0] == source and edge[1] == target for edge in self.edges)
-
-#     def get_connected_regulations(self, node_id):
-#         connected_regulations = []
-#         for edge in self.edges:
-#             if edge[0] == node_id or edge[1] == node_id:
-#                 connected_regulations.append(edge)
-#         return connected_regulations
-
-# def load_graph(graphml_file):
-#     graph = Graph()
-#     tree = ET.parse(graphml_file)
-#     root = tree.getroot()
-
-#     # 解析节点
-#     for node in root.findall('.//{http://graphml.graphdrawing.org/xmlns}node'):
-#         node_id = node.get('id')
-#         attributes = {}
-#         for data in node.findall('{http://graphml.graphdrawing.org/xmlns}data'):
-#             key = data.get('key')
-#             value = data.text
-#             attributes[key] = value
-#         graph.add_node(node_id, attributes)
-
-#     # 解析边
-#     for edge in root.findall('.//{http://graphml.graphdrawing.org/xmlns}edge'):
-#         source = edge.get('source')
-#         target = edge.get('target')
-#         attributes = {}
-#         for data in edge.findall('{http://graphml.graphdrawing.org/xmlns}data'):
-#             key = data.get('key')
-#             value = data.text
-#             attributes[key] = value
-#         graph.add_edge(source, target, attributes)
-
-#     return graph
-
-# def tokenize(text):
-    # 使用jieba进行分词
-    # return list(jieba.cut(text))
-
 class DocumentService:
     def __init__(self):
         self.api_key = DIFY_CONFIG['api_key']
@@ -280,36 +224,6 @@ class DocumentService:
             logger.error(f"处理文件时发生错误: {str(e)}")
             logger.error(f"错误类型: {type(e).__name__}")
             
-        #     for law_file in os.listdir(law_list_dir):
-        #         if law_file.endswith('.md'):
-        #             law_file_path = os.path.join(law_list_dir, law_file)
-        #             logger.info(f"正在评估文件 {filename} 与法规 {law_file}")
-        #             output_text = await self.workflow_service.run_workflow(law_file_path, file_path)
-                    
-        #             if output_text:
-        #                 assessment_results.append({
-        #                     'law_file': law_file,
-        #                     'assessment': output_text
-        #                 })
-                        
-        #                 output_path = os.path.join('Judge_output', f"{law_file}")
-        #                 with open(output_path, 'w', encoding='utf-8') as f:
-        #                     f.write(output_text)
-        #                 logger.info(f"已保存评估结果: {output_path}")
-            
-        #     return {
-        #         'upload_status': 'success',
-        #         'upload_response': response.json(),
-        #         'assessments': assessment_results
-        #     }
-            
-        # except Exception as e:
-        #     logger.error(f"处理文件时发生错误: {str(e)}")
-        #     logger.error(f"错误类型: {type(e).__name__}")
-        #     import traceback
-        #     logger.error(f"错误堆栈: \n{traceback.format_exc()}")
-        #     return None
-    
     async def get_documents(self):
         """获取文档列表"""
         try:

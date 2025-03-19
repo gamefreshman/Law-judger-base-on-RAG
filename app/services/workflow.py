@@ -77,10 +77,7 @@ class WorkflowService:
                 "user": "system-processor"
             }
             
-            # 打印请求详情
-            # logger.info(f"发送请求到: {url}")
-            # logger.info(f"请求头: {headers}")
-            # logger.info(f"请求数据: {json.dumps(data, indent=2)}")
+
             
             # 发送JSON格式的数据
             response = requests.post(url, headers=headers, json=data)
